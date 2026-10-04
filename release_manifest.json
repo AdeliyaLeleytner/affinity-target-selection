@@ -443,7 +443,7 @@
     {
       "path": "paper.pdf",
       "bytes": 773843,
-      "sha256": "799afbcfee8ebbe85a5c0c603fdf6e629921cce6e015c5789512d876b095ec57"
+      "sha256": "6197214a34b2744f089aaca5680c1f5ffc700fbaaaa7001f0f467565163a9afe"
     },
     {
       "path": "paper.tex",
@@ -1508,7 +1508,7 @@
     {
       "path": "supplementary.pdf",
       "bytes": 220695,
-      "sha256": "40da26692008bf5824c2a0af54866ac208f699f3421e568c7a8703a19a1a29e4"
+      "sha256": "8aa37a148ab51400986456be987b9be21537295e2882183ce97441c2d5cd1072"
     },
     {
       "path": "supplementary.tex",
