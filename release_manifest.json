@@ -17,8 +17,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7620,
-      "sha256": "c03f53e473fb06576b8684d953feab69f0456f233f0843d902b70476fb9cd32b"
+      "bytes": 7913,
+      "sha256": "e6adf78eaef04af645335c32a21177a57ccecbf2df6bbd89ae1a21f9f2605e30"
     },
     {
       "path": "configs/davis_completion.json",
@@ -442,13 +442,13 @@
     },
     {
       "path": "paper.pdf",
-      "bytes": 773843,
-      "sha256": "6197214a34b2744f089aaca5680c1f5ffc700fbaaaa7001f0f467565163a9afe"
+      "bytes": 774015,
+      "sha256": "49697575ab34430a740d7fcbe2711b5b5483ce97d2dcb8a67a9a5425adbd4401"
     },
     {
       "path": "paper.tex",
-      "bytes": 44426,
-      "sha256": "a384863705fa6eedec99d7ce122de43e85095d96d3c34318f0c51032bc1bfcdf"
+      "bytes": 44545,
+      "sha256": "ffd35bb89ae97584f6b4b11444089a8748c37a1e20a3a189811c8eb2bc790e8f"
     },
     {
       "path": "payload_manifest.json",
@@ -1508,7 +1508,7 @@
     {
       "path": "supplementary.pdf",
       "bytes": 220695,
-      "sha256": "8aa37a148ab51400986456be987b9be21537295e2882183ce97441c2d5cd1072"
+      "sha256": "8fb1c89b4f42b1eb91d0b8bd513f1ee8a4818d13d5f814bb9c886bbd8c421b5e"
     },
     {
       "path": "supplementary.tex",

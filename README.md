@@ -4,6 +4,8 @@ Reproducible analyses for **Local labels and measurement resolution shape the va
 
 The study asks when an interaction score adds useful information for ranking proteins for the same molecule. It compares native outputs, a local chemistry/protein reference, individual score augmentation and cached representation readouts. Source assay bounds, measurement-resolution strata, local training budgets and query weights remain explicit.
 
+Anonymous review archive: [https://anonymous.4open.science/r/affinity-target-selection-3E57/](https://anonymous.4open.science/r/affinity-target-selection-3E57/). The service currently permits this mirror through 4 October 2027; the underlying source repository remains maintained separately.
+
 ## Read the study
 
 - `paper.pdf` and `paper.tex`: main article in the official Springer Nature author template, using the Nature reference style.
