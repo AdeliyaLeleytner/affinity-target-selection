@@ -1,0 +1,68 @@
+{
+  "files": [
+    {
+      "file": "data/raw/davis/affinity_out.npz",
+      "sha256": "fa366a026b6a75e9abf3f865ec4253fcea7bc736cbf72d0e68ec936c71f2830b",
+      "bytes": 31213561
+    },
+    {
+      "file": "data/raw/davis/measurements.tsv",
+      "sha256": "711f5e45e26b7098d50f5201532835c19ab376ae2d9e46db3f9034dceee952d5",
+      "bytes": 13477288
+    },
+    {
+      "file": "data/raw/davis/ligand_mapping.csv",
+      "sha256": "676f72e1f53979927a9f5efce514cac772840cab4cb14cd88c21361e48323861",
+      "bytes": 5307
+    },
+    {
+      "file": "data/raw/spd/molecules.csv",
+      "sha256": "89fdd4d0b2588e9d1728b9053bcbf5322cbd64d3352461a1c6351b77be44bac5",
+      "bytes": 280841
+    },
+    {
+      "file": "data/raw/spd/assays.csv",
+      "sha256": "6d86a4b07a1994493af9f650a0d1d69fd8d62a78c38e501e87eaddf5481d6e07",
+      "bytes": 47375
+    },
+    {
+      "file": "data/raw/spd/measurements.parquet",
+      "sha256": "fa34246d1be7d106b337fbc3bcab7b0f18baf944490a795f79de2ec3a4fc93e7",
+      "bytes": 3468990
+    },
+    {
+      "file": "data/raw/spd/scored_molecules.csv",
+      "sha256": "ce664df437a3dec5713ae108145e21e964135e5664c34c5f9cdfd8d988f14ee6",
+      "bytes": 86631,
+      "original_source_sha256": "eca0069af2f622ef734910a77e807d193d3ab46f009ae8c747d9bae97c5facab",
+      "original_source_bytes": 248171,
+      "preparation": "Retain only InChIKey, name and canonical SMILES in original row order; all values and axes unchanged. Unused historical split and binary-label columns omitted."
+    },
+    {
+      "file": "data/raw/spd/native_scores.npz",
+      "sha256": "9a5f6f19388be4eca3b91789a7a330ddea41078cdb75a70f7d4120a00f153e50",
+      "bytes": 441169
+    },
+    {
+      "file": "data/raw/davis/esm_targets.npz",
+      "sha256": "a6aaa4e5f28e060ca27043c3ecbef47efddde73a853074209838650525f40f1d",
+      "bytes": 2187953
+    },
+    {
+      "file": "data/raw/davis/esm_targets.json",
+      "sha256": "9344c7027d2b74e1eff1af55c6e6eeaa6576ca93afbd063e72349466fafc5ffd",
+      "bytes": 1312
+    },
+    {
+      "file": "data/raw/spd/esm_targets.npz",
+      "sha256": "8d08e306ced999100f2ac64e746a058a8be1d2683403e19281237be7a4e970f7",
+      "bytes": 54369
+    },
+    {
+      "file": "data/raw/spd/esm_targets.json",
+      "sha256": "3893c0dd1baf23c7f5146f799d52c92405ddadbcf91d574301314fe685cb6200",
+      "bytes": 4816
+    }
+  ],
+  "note": "Source observations and cached native model outputs. Historical derived label/split columns may be present; new analyses read only explicitly declared fields."
+}

@@ -1,0 +1,26 @@
+{
+  "stage": "source_native_baseline",
+  "question": "Does the relative suitability of native output heads for ligand versus target ranking depend on whether both affinities are quantitatively resolved?",
+  "datasets": [
+    "SPD",
+    "DAVIS"
+  ],
+  "axes": [
+    "target",
+    "ligand"
+  ],
+  "measurement_strata": [
+    "all_determinate",
+    "both_exact",
+    "one_bounded",
+    "both_bounded"
+  ],
+  "reference_measurements": "Observed assay values and qualifiers. DAVIS 10000 nM is the source measurement ceiling, encoded as pKd <= 5; not a chosen activity threshold.",
+  "spd_policies": "Source representative flag and full-assay interval envelope evaluated separately; neither selected by results.",
+  "davis_constructs": "Retain all 442 assay constructs and record 434 distinct sequence strings; do not merge differing measurements for identical sequences.",
+  "score_orientation": "Higher means stronger. DAVIS affinity outputs are negated according to official Boltz documentation; SPD cache is already consistently oriented.",
+  "uncertainty": "Store every query contribution and empirical distributions. No significance or scientific stopping cutoff.",
+  "interpretation": "Comparisons are exploratory and retrospective. No claim of pretrained-model independence, experimentally validated mechanism or therapeutic efficacy.",
+  "new_fit_count": 0,
+  "new_native_inference_count": 0
+}

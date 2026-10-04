@@ -1,0 +1,9 @@
+policy,fraction,training_groups_min,training_groups_max,training_molecules_min,training_molecules_max,known_training_labels_min,known_training_labels_max,exact_training_labels_min,exact_training_labels_max
+source_representative,0.125,69,69,88,94,643,706,97,169
+source_representative,0.25,138,138,165,195,1230,1509,185,298
+source_representative,0.5,276,276,334,384,2498,2835,423,501
+source_representative,1.0,552,552,744,744,5505,5618,937,1027
+assay_envelope,0.125,69,69,88,94,677,719,94,155
+assay_envelope,0.25,138,138,165,195,1248,1561,178,271
+assay_envelope,0.5,276,276,334,384,2561,2936,393,480
+assay_envelope,1.0,552,552,744,744,5646,5749,884,976

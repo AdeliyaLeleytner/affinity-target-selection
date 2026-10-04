@@ -1,0 +1,417 @@
+\documentclass[pdflatex,sn-nature]{sn-jnl}
+\usepackage{graphicx,booktabs,longtable,amsmath}
+\newcommand{\widefigure}[1]{\makebox[\linewidth][c]{\includegraphics[width=160mm]{#1}}}
+\raggedbottom
+\begin{document}
+\title{Supplementary information: Local labels and measurement resolution shape the value of affinity scores}
+\author{\fnm{Anonymous}\sur{Authors}}
+\maketitle
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+\section*{Reading the comparisons}
+Every table is generated from the released source-data CSVs. Concordance values are percentages; no statistical threshold defines a winner. Native outputs receive no local fitting, while calibrated and augmented outputs use the stated local labels. Molecule-macro and comparison-pooled estimators answer different weighting questions. Assay bounds, unresolved pairs and missing observations are preserved. All-budget query distributions, bootstrap contrasts and fitting diagnostics accompany the tables in machine-readable form.
+
+
+\small
+\begin{longtable}{lrrrrr}
+\caption{Actual SPD local training budgets. Ranges span five outer folds. Fraction refers to eligible scaffold groups, not a fraction of individual cells.}\\
+\toprule
+Policy & Fraction & Groups & Molecules & Measured & Exact\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Policy & Fraction & Groups & Molecules & Measured & Exact\\
+\midrule
+\endhead
+Representative & 0.125 & 69 & 88--94 & 643--706 & 97--169\\
+Representative & 0.25 & 138 & 165--195 & 1230--1509 & 185--298\\
+Representative & 0.5 & 276 & 334--384 & 2498--2835 & 423--501\\
+Representative & 1 & 552 & 744 & 5505--5618 & 937--1027\\
+Envelope & 0.125 & 69 & 88--94 & 677--719 & 94--155\\
+Envelope & 0.25 & 138 & 165--195 & 1248--1561 & 178--271\\
+Envelope & 0.5 & 276 & 334--384 & 2561--2936 & 393--480\\
+Envelope & 1 & 552 & 744 & 5646--5749 & 884--976\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\clearpage\section*{Native output leaderboards}
+
+\small
+\begin{longtable}{lrrrr}
+\caption{SPD native concordance: source representative. Common finite-native support.}\\
+\toprule
+Output & Ligands & Ligands exact & Targets & Targets exact\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Output & Ligands & Ligands exact & Targets & Targets exact\\
+\midrule
+\endhead
+Boltz-2 affinity & 80.5 & 63.4 & 56.2 & 58.3\\
+Boltz-2 binder & 79.0 & 66.9 & 65.9 & 61.9\\
+Nesso affinity & 75.5 & 64.8 & 55.5 & 54.2\\
+Nesso binder & 77.8 & 66.3 & 61.9 & 58.8\\
+GNINA on Vina pose & 69.2 & 55.6 & 61.3 & 58.8\\
+AutoDock4 & 67.1 & 55.1 & 54.3 & 50.7\\
+GNINA own search & 70.3 & 55.0 & 62.8 & 60.5\\
+Vina & 64.7 & 54.5 & 58.0 & 49.5\\
+Boltzina far affinity & 80.6 & 63.6 & 56.3 & 57.5\\
+Boltzina far binder & 79.6 & 67.3 & 67.0 & 63.7\\
+Boltzina zero affinity & 80.7 & 63.6 & 56.3 & 57.5\\
+Boltzina zero binder & 79.6 & 67.3 & 67.0 & 63.7\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\small
+\begin{longtable}{lrrrr}
+\caption{SPD native concordance: assay envelope. Common finite-native support.}\\
+\toprule
+Output & Ligands & Ligands exact & Targets & Targets exact\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Output & Ligands & Ligands exact & Targets & Targets exact\\
+\midrule
+\endhead
+Boltz-2 affinity & 80.7 & 63.1 & 56.6 & 59.1\\
+Boltz-2 binder & 79.2 & 66.9 & 66.9 & 61.1\\
+Nesso affinity & 75.5 & 64.4 & 55.5 & 54.3\\
+Nesso binder & 77.9 & 66.3 & 62.4 & 59.8\\
+GNINA on Vina pose & 69.0 & 55.3 & 61.7 & 58.5\\
+AutoDock4 & 66.7 & 54.8 & 54.5 & 51.7\\
+GNINA own search & 70.1 & 54.5 & 63.1 & 60.4\\
+Vina & 64.5 & 54.4 & 58.1 & 50.9\\
+Boltzina far affinity & 80.8 & 63.2 & 56.8 & 57.3\\
+Boltzina far binder & 79.7 & 67.4 & 67.7 & 62.9\\
+Boltzina zero affinity & 80.8 & 63.2 & 56.8 & 57.3\\
+Boltzina zero binder & 79.7 & 67.4 & 67.7 & 62.9\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\clearpage\section*{Local score calibration and augmentation}
+
+\small
+\begin{longtable}{lrrrr}
+\caption{SPD fitted concordance: source representative. Quarter and full nested scaffold-group budgets. Native rows are in the preceding table.}\\
+\toprule
+Arm & All, $1/4$ & All, full & Exact, $1/4$ & Exact, full\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Arm & All, $1/4$ & All, full & Exact, $1/4$ & Exact, full\\
+\midrule
+\endhead
+Target prior & 60.4 & 59.8 & 60.0 & 59.7\\
+Chemistry & 65.8 & 71.1 & 62.9 & 65.0\\
+Calibrated Boltz-2 affinity & 63.0 & 65.8 & 60.0 & 61.7\\*
+Mask: Boltz-2 affinity & 65.8 & 71.1 & 62.9 & 65.0\\*
+Augment: Boltz-2 affinity & 66.1 & 71.7 & 62.3 & 65.4\\
+Calibrated Boltz-2 binder & 63.6 & 65.5 & 57.5 & 60.1\\*
+Mask: Boltz-2 binder & 65.8 & 71.1 & 62.9 & 65.0\\*
+Augment: Boltz-2 binder & 68.4 & 71.7 & 60.9 & 63.3\\
+Calibrated Boltzina far affinity & 63.4 & 65.8 & 61.5 & 64.3\\*
+Mask: Boltzina far affinity & 65.9 & 71.0 & 63.2 & 65.1\\*
+Augment: Boltzina far affinity & 66.8 & 70.7 & 66.0 & 66.8\\
+Calibrated Boltzina far binder & 63.7 & 66.6 & 58.1 & 62.1\\*
+Mask: Boltzina far binder & 65.9 & 71.0 & 63.2 & 65.1\\*
+Augment: Boltzina far binder & 66.1 & 71.2 & 60.5 & 64.6\\
+Calibrated Boltzina zero affinity & 63.4 & 65.8 & 61.5 & 64.3\\*
+Mask: Boltzina zero affinity & 65.9 & 71.0 & 63.2 & 65.1\\*
+Augment: Boltzina zero affinity & 66.8 & 70.7 & 66.0 & 66.8\\
+Calibrated Boltzina zero binder & 63.7 & 66.6 & 58.1 & 62.1\\*
+Mask: Boltzina zero binder & 65.9 & 71.0 & 63.2 & 65.1\\*
+Augment: Boltzina zero binder & 66.1 & 71.2 & 60.5 & 64.6\\
+Calibrated GNINA on Vina pose & 62.2 & 64.6 & 61.0 & 61.4\\*
+Mask: GNINA on Vina pose & 65.7 & 70.8 & 63.0 & 64.9\\*
+Augment: GNINA on Vina pose & 65.2 & 70.9 & 61.5 & 66.2\\
+Calibrated Nesso affinity & 66.7 & 67.0 & 62.6 & 63.3\\*
+Mask: Nesso affinity & 65.7 & 70.8 & 63.0 & 64.9\\*
+Augment: Nesso affinity & 69.7 & 72.2 & 63.5 & 67.0\\
+Calibrated Nesso binder & 64.3 & 67.1 & 59.2 & 63.0\\*
+Mask: Nesso binder & 65.7 & 70.8 & 63.0 & 64.9\\*
+Augment: Nesso binder & 68.4 & 71.8 & 59.4 & 65.6\\
+Calibrated AutoDock4 & 60.6 & 60.9 & 58.0 & 60.8\\*
+Mask: AutoDock4 & 65.7 & 70.8 & 63.0 & 64.9\\*
+Augment: AutoDock4 & 65.8 & 70.8 & 62.5 & 65.2\\
+Calibrated GNINA own search & 62.7 & 65.3 & 59.6 & 60.9\\*
+Mask: GNINA own search & 65.7 & 70.8 & 63.0 & 64.9\\*
+Augment: GNINA own search & 65.0 & 71.7 & 60.9 & 66.3\\
+Calibrated Vina & 61.1 & 60.7 & 58.1 & 59.4\\*
+Mask: Vina & 65.7 & 70.8 & 63.0 & 64.9\\*
+Augment: Vina & 65.1 & 71.9 & 63.1 & 64.9\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\clearpage
+
+\small
+\begin{longtable}{lrrrr}
+\caption{SPD fitted concordance: assay envelope. Quarter and full nested scaffold-group budgets. Native rows are in the preceding table.}\\
+\toprule
+Arm & All, $1/4$ & All, full & Exact, $1/4$ & Exact, full\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Arm & All, $1/4$ & All, full & Exact, $1/4$ & Exact, full\\
+\midrule
+\endhead
+Target prior & 59.9 & 59.8 & 59.9 & 60.0\\
+Chemistry & 66.2 & 71.6 & 61.7 & 63.9\\
+Calibrated Boltz-2 affinity & 64.4 & 66.1 & 61.2 & 62.3\\*
+Mask: Boltz-2 affinity & 66.2 & 71.7 & 61.7 & 63.9\\*
+Augment: Boltz-2 affinity & 67.3 & 71.8 & 64.7 & 65.2\\
+Calibrated Boltz-2 binder & 64.7 & 65.8 & 58.6 & 58.7\\*
+Mask: Boltz-2 binder & 66.2 & 71.7 & 61.7 & 63.9\\*
+Augment: Boltz-2 binder & 68.5 & 72.4 & 60.3 & 62.8\\
+Calibrated Boltzina far affinity & 65.0 & 66.2 & 62.0 & 62.6\\*
+Mask: Boltzina far affinity & 66.2 & 71.8 & 61.7 & 64.5\\*
+Augment: Boltzina far affinity & 66.9 & 71.8 & 64.5 & 67.5\\
+Calibrated Boltzina far binder & 65.5 & 67.3 & 57.7 & 61.9\\*
+Mask: Boltzina far binder & 66.2 & 71.8 & 61.7 & 64.5\\*
+Augment: Boltzina far binder & 67.4 & 71.4 & 61.0 & 63.8\\
+Calibrated Boltzina zero affinity & 65.0 & 66.2 & 62.0 & 62.6\\*
+Mask: Boltzina zero affinity & 66.2 & 71.8 & 61.7 & 64.5\\*
+Augment: Boltzina zero affinity & 66.9 & 71.8 & 64.5 & 67.5\\
+Calibrated Boltzina zero binder & 65.5 & 67.3 & 57.7 & 61.9\\*
+Mask: Boltzina zero binder & 66.2 & 71.8 & 61.7 & 64.5\\*
+Augment: Boltzina zero binder & 67.4 & 71.4 & 61.0 & 63.8\\
+Calibrated GNINA on Vina pose & 62.7 & 64.3 & 59.6 & 60.9\\*
+Mask: GNINA on Vina pose & 66.0 & 71.8 & 61.6 & 64.5\\*
+Augment: GNINA on Vina pose & 66.7 & 71.4 & 60.7 & 65.7\\
+Calibrated Nesso affinity & 67.0 & 67.1 & 61.6 & 62.1\\*
+Mask: Nesso affinity & 66.0 & 71.8 & 61.6 & 64.5\\*
+Augment: Nesso affinity & 70.4 & 72.7 & 61.0 & 65.9\\
+Calibrated Nesso binder & 65.1 & 67.7 & 59.5 & 62.6\\*
+Mask: Nesso binder & 66.0 & 71.8 & 61.6 & 64.5\\*
+Augment: Nesso binder & 69.2 & 72.0 & 60.2 & 65.1\\
+Calibrated AutoDock4 & 60.3 & 61.0 & 59.1 & 60.2\\*
+Mask: AutoDock4 & 66.0 & 71.8 & 61.6 & 64.5\\*
+Augment: AutoDock4 & 66.6 & 71.8 & 61.7 & 64.8\\
+Calibrated GNINA own search & 63.9 & 65.1 & 58.3 & 58.7\\*
+Mask: GNINA own search & 66.0 & 71.8 & 61.6 & 64.5\\*
+Augment: GNINA own search & 67.1 & 72.4 & 61.3 & 66.0\\
+Calibrated Vina & 60.3 & 60.9 & 58.3 & 61.2\\*
+Mask: Vina & 66.0 & 71.8 & 61.6 & 64.5\\*
+Augment: Vina & 66.9 & 72.5 & 63.2 & 64.9\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\clearpage
+\begin{figure}[p]\centering\widefigure{figs/label_value_assay_envelope.pdf}
+\caption{\textbf{The assay-envelope sensitivity retains the local-data pattern.} Same model, partition, metric and conditional scaffold-bootstrap construction as the representative-policy figure in the main article. The envelope changes measurement support as well as values: 377 molecules supply determinable target pairs, including 252 with two-exact pairs.}\end{figure}
+\clearpage
+\begin{figure}[p]\centering\widefigure{figs/score_component_mean.pdf}
+\caption{\textbf{The profile mean alone does not retain the full augmentation benefit.} Mean-only augmentation minus the corresponding availability-only control, with identical local labels and chemistry features. Both policies, all budgets and both measurement strata are retained. Whiskers are conditional 95\% paired scaffold-bootstrap intervals, complementing the mean-plus-relative contrast in the main article.}\end{figure}
+\clearpage
+\section*{DAVIS readout controls}
+
+
+\small
+\begin{longtable}{lrrrr}
+\caption{DAVIS new targets known molecules. Identity-matched 47-molecule cohort; held-target comparisons remain within the same model context.}\\
+\toprule
+Arm & All, $1/4$ & All, full & Exact, $1/4$ & Exact, full\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Arm & All, $1/4$ & All, full & Exact, $1/4$ & Exact, full\\
+\midrule
+\endhead
+Native Boltz-2 affinity & 69.6 & 69.6 & 62.9 & 62.9\\
+Native Boltz-2 binder & 77.6 & 77.6 & 62.1 & 62.1\\
+Chemistry + sequence & 71.9 & 81.1 & 62.4 & 69.6\\
+Target prior & 65.3 & 69.6 & 56.8 & 57.9\\
+Calibrated Boltz-2 affinity & 71.8 & 75.6 & 60.8 & 63.0\\*
+Mask: Boltz-2 affinity & 71.9 & 81.1 & 62.4 & 69.6\\*
+Augment: Boltz-2 affinity & 76.5 & 83.2 & 63.2 & 68.1\\
+Calibrated Boltz-2 binder & 78.1 & 79.9 & 62.9 & 64.2\\*
+Mask: Boltz-2 binder & 71.9 & 81.1 & 62.4 & 69.6\\*
+Augment: Boltz-2 binder & 79.6 & 84.4 & 63.7 & 68.1\\
+Representation & 78.5 & 81.9 & 62.5 & 67.2\\
+Representation + chemistry & 79.3 & 84.5 & 62.7 & 68.8\\
+Four scalar members & 78.0 & 80.5 & 64.0 & 65.1\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\small
+\begin{longtable}{lrrrr}
+\caption{DAVIS new molecule known targets. Identity-matched 47-molecule cohort; held-target comparisons remain within the same model context.}\\
+\toprule
+Arm & All, $1/4$ & All, full & Exact, $1/4$ & Exact, full\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Arm & All, $1/4$ & All, full & Exact, $1/4$ & Exact, full\\
+\midrule
+\endhead
+Target prior & 69.4 & 72.2 & 57.9 & 58.3\\
+Chemistry & 70.2 & 72.5 & 58.9 & 58.9\\
+Calibrated Boltz-2 affinity & 73.7 & 77.9 & 62.6 & 67.0\\*
+Mask: Boltz-2 affinity & 70.2 & 72.5 & 58.9 & 58.9\\*
+Augment: Boltz-2 affinity & 73.4 & 77.9 & 63.8 & 68.0\\
+Calibrated Boltz-2 binder & 78.2 & 81.8 & 64.3 & 67.2\\*
+Mask: Boltz-2 binder & 70.2 & 72.5 & 58.9 & 58.9\\*
+Augment: Boltz-2 binder & 77.8 & 81.8 & 65.2 & 68.2\\
+Representation & 76.7 & 82.8 & 66.5 & 67.4\\
+Representation + chemistry & 76.0 & 82.8 & 65.9 & 68.3\\
+Representation, four PCs & 81.6 & 83.9 & 67.4 & 68.6\\
+Four scalar members & 80.4 & 82.9 & 67.5 & 67.9\\
+Native Boltz-2 affinity & 69.5 & 69.5 & 64.3 & 64.3\\
+Native Boltz-2 binder & 77.4 & 77.4 & 63.1 & 63.1\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\clearpage
+\begin{figure}[p]\centering\widefigure{figs/target_pair_gains.pdf}
+\caption{\textbf{The comparison anchor changes the interpretation of transfer gains.} All 45 held-target-pair fits use the remaining eight targets, and target comparisons never combine different model contexts. Each native output is augmented separately. Left: increments over chemistry plus sequence. Right: increments over the same native score. Whiskers are conditional 95\% paired whole-scaffold bootstrap intervals; both measurement policies and strata are shown. These are fixed-panel local transfer results, not a pretraining-exclusion test.}\end{figure}
+\clearpage\section*{Exhaustive SPD target-pair transfer}
+
+\small
+\begin{longtable}{lrrrr}
+\caption{All 45 target pairs withheld separately: source representative. Each fit uses the remaining eight targets. Pair credits are pooled within a molecule before averaging molecules.}\\
+\toprule
+Arm & All & Exact & Molecules & Pairs\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Arm & All & Exact & Molecules & Pairs\\
+\midrule
+\endhead
+Native Boltz-2 affinity & 56.2 & 58.3 & 373 & 6496\\
+Native Boltz-2 binder & 65.9 & 61.9 & 373 & 6496\\
+Native Boltzina far affinity & 56.3 & 57.5 & 373 & 6496\\
+Native Boltzina far binder & 67.0 & 63.7 & 373 & 6496\\
+Native Boltzina zero affinity & 56.3 & 57.5 & 373 & 6496\\
+Native Boltzina zero binder & 67.0 & 63.7 & 373 & 6496\\
+Native GNINA on Vina pose & 61.3 & 58.8 & 373 & 6496\\
+Native Nesso affinity & 55.5 & 54.2 & 373 & 6496\\
+Native Nesso binder & 61.9 & 58.8 & 373 & 6496\\
+Native AutoDock4 & 54.3 & 50.7 & 373 & 6496\\
+Native GNINA own search & 62.8 & 60.5 & 373 & 6496\\
+Native Vina & 58.0 & 49.5 & 373 & 6496\\
+Chemistry + sequence & 51.2 & 50.7 & 373 & 6496\\
+Target prior & 47.0 & 57.0 & 373 & 6496\\
+Calibrated Boltz-2 affinity & 54.8 & 53.3 & 373 & 6496\\*
+Mask: Boltz-2 affinity & 51.2 & 50.8 & 373 & 6496\\*
+Augment: Boltz-2 affinity & 57.3 & 55.4 & 373 & 6496\\
+Calibrated Boltz-2 binder & 66.5 & 62.4 & 373 & 6496\\*
+Mask: Boltz-2 binder & 51.2 & 50.8 & 373 & 6496\\*
+Augment: Boltz-2 binder & 66.8 & 62.1 & 373 & 6496\\
+Calibrated Boltzina far affinity & 55.5 & 53.1 & 373 & 6496\\*
+Mask: Boltzina far affinity & 51.0 & 50.1 & 373 & 6496\\*
+Augment: Boltzina far affinity & 55.5 & 53.5 & 373 & 6496\\
+Calibrated Boltzina far binder & 66.6 & 62.1 & 373 & 6496\\*
+Mask: Boltzina far binder & 51.0 & 50.1 & 373 & 6496\\*
+Augment: Boltzina far binder & 68.5 & 63.2 & 373 & 6496\\
+Calibrated Boltzina zero affinity & 55.5 & 53.1 & 373 & 6496\\*
+Mask: Boltzina zero affinity & 51.0 & 50.1 & 373 & 6496\\*
+Augment: Boltzina zero affinity & 55.5 & 53.5 & 373 & 6496\\
+Calibrated Boltzina zero binder & 66.6 & 62.1 & 373 & 6496\\*
+Mask: Boltzina zero binder & 51.0 & 50.1 & 373 & 6496\\*
+Augment: Boltzina zero binder & 68.5 & 63.2 & 373 & 6496\\
+Calibrated GNINA on Vina pose & 59.0 & 58.8 & 373 & 6496\\*
+Mask: GNINA on Vina pose & 50.9 & 50.2 & 373 & 6496\\*
+Augment: GNINA on Vina pose & 59.2 & 58.6 & 373 & 6496\\
+Calibrated Nesso affinity & 54.2 & 53.5 & 373 & 6496\\*
+Mask: Nesso affinity & 50.9 & 50.2 & 373 & 6496\\*
+Augment: Nesso affinity & 55.1 & 53.8 & 373 & 6496\\
+Calibrated Nesso binder & 61.9 & 59.4 & 373 & 6496\\*
+Mask: Nesso binder & 50.9 & 50.2 & 373 & 6496\\*
+Augment: Nesso binder & 62.5 & 58.0 & 373 & 6496\\
+Calibrated AutoDock4 & 49.0 & 54.7 & 373 & 6496\\*
+Mask: AutoDock4 & 50.9 & 50.2 & 373 & 6496\\*
+Augment: AutoDock4 & 54.0 & 53.4 & 373 & 6496\\
+Calibrated GNINA own search & 58.3 & 57.8 & 373 & 6496\\*
+Mask: GNINA own search & 51.0 & 50.2 & 373 & 6496\\*
+Augment: GNINA own search & 59.7 & 57.0 & 373 & 6496\\
+Calibrated Vina & 55.2 & 55.6 & 373 & 6496\\*
+Mask: Vina & 50.9 & 50.2 & 373 & 6496\\*
+Augment: Vina & 59.0 & 56.0 & 373 & 6496\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\small
+\begin{longtable}{lrrrr}
+\caption{All 45 target pairs withheld separately: assay envelope. Each fit uses the remaining eight targets. Pair credits are pooled within a molecule before averaging molecules.}\\
+\toprule
+Arm & All & Exact & Molecules & Pairs\\
+\midrule
+\endfirsthead
+\caption[]{Continued.}\\
+\toprule
+Arm & All & Exact & Molecules & Pairs\\
+\midrule
+\endhead
+Native Boltz-2 affinity & 56.6 & 59.1 & 377 & 6362\\
+Native Boltz-2 binder & 66.9 & 61.1 & 377 & 6362\\
+Native Boltzina far affinity & 56.8 & 57.3 & 377 & 6362\\
+Native Boltzina far binder & 67.7 & 62.9 & 377 & 6362\\
+Native Boltzina zero affinity & 56.8 & 57.3 & 377 & 6362\\
+Native Boltzina zero binder & 67.7 & 62.9 & 377 & 6362\\
+Native GNINA on Vina pose & 61.7 & 58.5 & 377 & 6362\\
+Native Nesso affinity & 55.5 & 54.3 & 377 & 6362\\
+Native Nesso binder & 62.4 & 59.8 & 377 & 6362\\
+Native AutoDock4 & 54.5 & 51.7 & 377 & 6362\\
+Native GNINA own search & 63.1 & 60.4 & 377 & 6362\\
+Native Vina & 58.1 & 50.9 & 377 & 6362\\
+Chemistry + sequence & 51.3 & 51.5 & 377 & 6362\\
+Target prior & 47.2 & 56.0 & 377 & 6362\\
+Calibrated Boltz-2 affinity & 56.7 & 57.0 & 377 & 6362\\*
+Mask: Boltz-2 affinity & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Boltz-2 affinity & 56.7 & 55.4 & 377 & 6362\\
+Calibrated Boltz-2 binder & 67.2 & 61.6 & 377 & 6362\\*
+Mask: Boltz-2 binder & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Boltz-2 binder & 67.5 & 61.2 & 377 & 6362\\
+Calibrated Boltzina far affinity & 56.3 & 55.2 & 377 & 6362\\*
+Mask: Boltzina far affinity & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Boltzina far affinity & 56.1 & 54.0 & 377 & 6362\\
+Calibrated Boltzina far binder & 67.2 & 62.0 & 377 & 6362\\*
+Mask: Boltzina far binder & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Boltzina far binder & 69.2 & 63.0 & 377 & 6362\\
+Calibrated Boltzina zero affinity & 56.3 & 55.2 & 377 & 6362\\*
+Mask: Boltzina zero affinity & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Boltzina zero affinity & 56.1 & 54.0 & 377 & 6362\\
+Calibrated Boltzina zero binder & 67.2 & 62.0 & 377 & 6362\\*
+Mask: Boltzina zero binder & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Boltzina zero binder & 69.2 & 63.0 & 377 & 6362\\
+Calibrated GNINA on Vina pose & 59.6 & 59.7 & 377 & 6362\\*
+Mask: GNINA on Vina pose & 51.3 & 51.5 & 377 & 6362\\*
+Augment: GNINA on Vina pose & 59.8 & 59.0 & 377 & 6362\\
+Calibrated Nesso affinity & 54.6 & 53.9 & 377 & 6362\\*
+Mask: Nesso affinity & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Nesso affinity & 55.0 & 54.1 & 377 & 6362\\
+Calibrated Nesso binder & 62.7 & 60.4 & 377 & 6362\\*
+Mask: Nesso binder & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Nesso binder & 63.3 & 59.3 & 377 & 6362\\
+Calibrated AutoDock4 & 49.3 & 55.7 & 377 & 6362\\*
+Mask: AutoDock4 & 51.3 & 51.5 & 377 & 6362\\*
+Augment: AutoDock4 & 54.2 & 53.9 & 377 & 6362\\
+Calibrated GNINA own search & 59.2 & 58.4 & 377 & 6362\\*
+Mask: GNINA own search & 51.3 & 51.5 & 377 & 6362\\*
+Augment: GNINA own search & 59.8 & 57.5 & 377 & 6362\\
+Calibrated Vina & 56.0 & 58.0 & 377 & 6362\\*
+Mask: Vina & 51.3 & 51.5 & 377 & 6362\\*
+Augment: Vina & 59.9 & 57.5 & 377 & 6362\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+\section*{Reproducibility and provenance}
+Raw measurement sources, dataset identities, prediction channels, versions, acquisition settings and available model/source hashes are documented in \texttt{data/provenance/}. The released prediction arrays permit metric reproduction without native inference. \texttt{scripts/replay\_results.py} independently enumerates ordered pairs and checks aggregate concordance; numerical diagnostics are retained for every fitted model. Original native inference and local downstream fitting are separate computational costs. The configurations specify technical hyperparameters, not scientific effect-size or success criteria.
+\end{document}

@@ -1,0 +1,33 @@
+{
+  "dataset": "DAVIS",
+  "model": "facebook/esm2_t33_650M_UR50D",
+  "model_revision": null,
+  "model_revision_note": "The original cache metadata does not record a checkpoint revision.",
+  "pooling": {
+    "kind": "plm_mean_pool_chunked",
+    "max_tokens": 1024,
+    "stride": 1022,
+    "original_cache_total_chunks": 717
+  },
+  "alignment": "Exact SHA1 of the recorded sequence; retain all assay constructs.",
+  "constructs": 442,
+  "unique_sequences": 434,
+  "embedding_dimension": 1280,
+  "embedding_dtype": "float32",
+  "source_cache_sha256": "77e978e15045efc6a53041a74228e8ff0fb58a56736ff544c4ca840166bf17cd",
+  "source_sequence_table_sha256": "101d68c45e61f3ce552195618090f3e40fc0ce03215524a3cb2ce151b38ce156",
+  "target_table_sha256": "3ec03304cac7ac27143b481f2b3cfc322a3ccf97e250f65862cd05db556f1ead",
+  "verification": {
+    "missing_sequence_keys": 0,
+    "sequence_mismatches": 0,
+    "same_sequence_vectors_identical": true,
+    "finite_values_only": true
+  },
+  "arrays": {
+    "target_names": "Assay construct names in current native-baseline target-table order.",
+    "sequence_sha1": "SHA1 of the exact sequence string.",
+    "sequences": "Exact source sequence strings.",
+    "sequence_lengths": "Sequence lengths in amino acids.",
+    "embeddings": "Aligned cached sequence embeddings."
+  }
+}

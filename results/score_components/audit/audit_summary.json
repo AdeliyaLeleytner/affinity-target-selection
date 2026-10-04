@@ -1,0 +1,295 @@
+{
+  "analysis": "independent retrospective numerical replay of saved score-component predictions",
+  "created_utc": "2026-10-04T01:03:09.325356+00:00",
+  "run_id": "487ae389-1dca-4c34-994c-ced9ff7ec044",
+  "revision": "f1c81bc",
+  "new_fits": 0,
+  "retrieval": 0,
+  "numerical_threads": 1,
+  "numerical_replay_tolerance": 1e-12,
+  "tolerance_meaning": "Floating-point CSV round-trip check only; not a scientific effect threshold",
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261004,
+    "unit": "scaffold groups of evaluable molecules, resampled with replacement",
+    "coupling": "Every contrast, output and label budget uses the same resample within each policy/stratum",
+    "intervals": "2.5th and97.5th percentiles; conditional on fixed OOF predictions; no refits or p-values"
+  },
+  "policies": {
+    "source_representative": {
+      "per_query_replay": {
+        "rows": 922560,
+        "maximum_absolute_replay_errors": {
+          "pairs": 0.0,
+          "eligible_pairs": 0.0,
+          "credit": 0.0,
+          "concordance": 1.1102230246251565e-16
+        }
+      },
+      "aggregate_replay": {
+        "rows": 992,
+        "maximum_absolute_replay_errors": {
+          "queries": 0,
+          "evaluable_queries": 0,
+          "unavailable_queries": 0,
+          "eligible_pairs": 0,
+          "pairs": 0,
+          "credit": 0,
+          "macro_concordance": 0,
+          "pooled_concordance": 0
+        }
+      },
+      "fit_audit": {
+        "records": 8600,
+        "success_true": 8600,
+        "failed": 0,
+        "unique_fit_keys": 8600,
+        "stage_counts": {
+          "inner": 7740,
+          "outer_final": 860
+        },
+        "termination_messages": {
+          "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH": 8143,
+          "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL": 457
+        },
+        "maximum_iterations": 303,
+        "maximum_gradient": 3.2145892244617516e-05,
+        "sum_fit_seconds": 826.605542715002
+      },
+      "methods_including_native": 62,
+      "stored_oof_shape": [
+        50,
+        4,
+        930,
+        10
+      ],
+      "support": {
+        "all_determinate": {
+          "queries": 373,
+          "pairs": 6496
+        },
+        "both_exact": {
+          "queries": 261,
+          "pairs": 2235
+        },
+        "one_bounded": {
+          "queries": 340,
+          "pairs": 4261
+        },
+        "both_bounded": {
+          "queries": 0,
+          "pairs": 0
+        }
+      }
+    },
+    "assay_envelope": {
+      "per_query_replay": {
+        "rows": 922560,
+        "maximum_absolute_replay_errors": {
+          "pairs": 0.0,
+          "eligible_pairs": 0.0,
+          "credit": 0.0,
+          "concordance": 1.1102230246251565e-16
+        }
+      },
+      "aggregate_replay": {
+        "rows": 992,
+        "maximum_absolute_replay_errors": {
+          "queries": 0,
+          "evaluable_queries": 0,
+          "unavailable_queries": 0,
+          "eligible_pairs": 0,
+          "pairs": 0,
+          "credit": 0,
+          "macro_concordance": 0,
+          "pooled_concordance": 5.551115123125783e-17
+        }
+      },
+      "fit_audit": {
+        "records": 8600,
+        "success_true": 8600,
+        "failed": 0,
+        "unique_fit_keys": 8600,
+        "stage_counts": {
+          "inner": 7740,
+          "outer_final": 860
+        },
+        "termination_messages": {
+          "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH": 8142,
+          "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL": 458
+        },
+        "maximum_iterations": 303,
+        "maximum_gradient": 2.309953886588112e-05,
+        "sum_fit_seconds": 821.8259417680002
+      },
+      "methods_including_native": 62,
+      "stored_oof_shape": [
+        50,
+        4,
+        930,
+        10
+      ],
+      "support": {
+        "all_determinate": {
+          "queries": 377,
+          "pairs": 6362
+        },
+        "both_exact": {
+          "queries": 252,
+          "pairs": 1976
+        },
+        "one_bounded": {
+          "queries": 341,
+          "pairs": 4165
+        },
+        "both_bounded": {
+          "queries": 30,
+          "pairs": 221
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "root": "component",
+      "relative_path": "prepared/spd_source_representative_inputs.npz",
+      "bytes": 477846,
+      "sha256": "4257d09aa4327fef3fa5909f38886f9c800958f5718492e5cc358c687f91b84c"
+    },
+    {
+      "root": "reference",
+      "relative_path": "prepared/spd_source_representative_inputs.npz",
+      "bytes": 477846,
+      "sha256": "4257d09aa4327fef3fa5909f38886f9c800958f5718492e5cc358c687f91b84c"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/source_representative/new_molecule_known_targets/known_oof.npz",
+      "bytes": 13901701,
+      "sha256": "937956273c2b583d7eb8b1e0c8f86dacd9cae0a016a8d425901412f030758309"
+    },
+    {
+      "root": "reference",
+      "relative_path": "SPD/source_representative/new_molecule_known_targets/known_oof.npz",
+      "bytes": 10454627,
+      "sha256": "6253b6723c5d72118f020e5d52c1f703a0373fa142f3675f5aa7b1545e0d9089"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/source_representative/new_molecule_known_targets/known_summary.json",
+      "bytes": 9796,
+      "sha256": "76196f5b6cc322a01787296ddd0c4a4f5ae8ac048c80ae38c01bffc941339c33"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/source_representative/new_molecule_known_targets/known_fits.jsonl",
+      "bytes": 6880639,
+      "sha256": "ad6d96ef82ebd6f4d71213fb9bf571100a4543f3737dafd3e6ac7170265d0b4a"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/source_representative/new_molecule_known_targets/known_query_metrics.csv",
+      "bytes": 143251194,
+      "sha256": "19bab14f2d9c73fe3b32651ee0152c2655a3f205ddad19bda278c3289de52a2c"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/source_representative/new_molecule_known_targets/known_aggregate_metrics.csv",
+      "bytes": 148015,
+      "sha256": "77c479c11b7a36ba5c42dfd83e0f1327af6e48fa780addfdfefef6e3b9128410"
+    },
+    {
+      "root": "component",
+      "relative_path": "prepared/spd_assay_envelope_inputs.npz",
+      "bytes": 477440,
+      "sha256": "c0d55f170059d4895b1da223ac2b938d9c7bbbc0fa329859e5918c541199304d"
+    },
+    {
+      "root": "reference",
+      "relative_path": "prepared/spd_assay_envelope_inputs.npz",
+      "bytes": 477440,
+      "sha256": "c0d55f170059d4895b1da223ac2b938d9c7bbbc0fa329859e5918c541199304d"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/assay_envelope/new_molecule_known_targets/known_oof.npz",
+      "bytes": 13902090,
+      "sha256": "5e30bf227b3435edf879ad9c07f53b61e770f5ab070fa5882a00b8f3cae385d5"
+    },
+    {
+      "root": "reference",
+      "relative_path": "SPD/assay_envelope/new_molecule_known_targets/known_oof.npz",
+      "bytes": 10452808,
+      "sha256": "8953d845663b2503e96d30f607567ae7aa2b62129b8728c250aba1d6e84528af"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/assay_envelope/new_molecule_known_targets/known_summary.json",
+      "bytes": 9785,
+      "sha256": "b0adabe64d05777f905911d8954234da3033c8315a537c0111c44ba6064c670f"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/assay_envelope/new_molecule_known_targets/known_fits.jsonl",
+      "bytes": 6820384,
+      "sha256": "1e327b5c4f5ea152e793e35ed748b385051946b63c57ec285854c11f9a021339"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/assay_envelope/new_molecule_known_targets/known_query_metrics.csv",
+      "bytes": 136924520,
+      "sha256": "0e35a1e68b5934dd3b53bf367826e66b27c5c9b4d3a86e08925025366b6b65a2"
+    },
+    {
+      "root": "component",
+      "relative_path": "SPD/assay_envelope/new_molecule_known_targets/known_aggregate_metrics.csv",
+      "bytes": 151718,
+      "sha256": "c1aef2849443dfb48bac06e243314d40ff0fef37f78ed88fea274736ce09d32c"
+    }
+  ],
+  "log_completion_evidence": [
+    {
+      "line": 17203,
+      "policy": "assay_envelope",
+      "status": "complete",
+      "fits": 8600
+    },
+    {
+      "line": 17204,
+      "policy": "source_representative",
+      "status": "complete",
+      "fits": 8600
+    }
+  ],
+  "prediction_identity": {
+    "method_fraction_policy_comparisons": 208,
+    "all_exact": true,
+    "all_selected_ridge_identical": true,
+    "maximum_absolute_difference": 0.0
+  },
+  "increments": {
+    "rows": 384,
+    "contrasts": [
+      "mean_relative_minus_mean",
+      "mean_minus_availability"
+    ],
+    "strata": [
+      "all_determinate",
+      "both_exact"
+    ],
+    "outputs": 12,
+    "budgets": 4,
+    "interpretation": "Predictive increments under fixed arm definitions and independent tuning; no causal mechanism or equivalence conclusion."
+  },
+  "elapsed_seconds": 11.654552707999999,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "version": "0.3.23.dev"
+    }
+  ],
+  "status": "replay_verified",
+  "script_sha256": "e750f739bf075f32c3c1cd233aae830cd3a930a03ec74fadf52c33cd03c923d8"
+}

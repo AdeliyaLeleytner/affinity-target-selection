@@ -1,0 +1,37 @@
+{
+  "dataset": "DAVIS",
+  "policy": "exact_identity",
+  "mode": "full",
+  "regime": "new_targets_known_molecules",
+  "fits": 2200,
+  "models": [
+    "baseline",
+    "target_prior",
+    "calibrated__boltz_affinity",
+    "availability__boltz_affinity",
+    "plus__boltz_affinity",
+    "calibrated__boltz_binder",
+    "availability__boltz_binder",
+    "plus__boltz_binder",
+    "representation_readout",
+    "representation_plus_chemistry",
+    "scalar_members_readout"
+  ],
+  "fractions": [
+    0.125,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "skipped_contexts": [],
+  "unavailable_arms": [],
+  "elapsed_seconds": 1385.819085208,
+  "test_labels_evaluated": true,
+  "test_predictions_saved": true,
+  "prediction_comparison_scope": "Within target fold only; pool pair credits per molecule before macro averaging.",
+  "molecular_feature_scope": "All known molecules; no held-target labels used in feature fitting.",
+  "target_and_pair_feature_scope": "Fitted only on the training target partition, separately inside inner folds.",
+  "native_common_finite_cells": 20774,
+  "native_inference_runs": 0,
+  "paid_compute": 0
+}

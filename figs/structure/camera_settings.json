@@ -1,0 +1,61 @@
+{
+  "pymol_version": [
+    "3.1.0",
+    3.0,
+    3000000,
+    1774376360,
+    "",
+    0
+  ],
+  "receptor_selection": "reference and chain A and polymer.protein and resi 523-777 and not hydro",
+  "ligand_selection": "reference and chain A and resn DEX and resi 301 and not hydro",
+  "receptor_atoms": 2074,
+  "ligand_heavy_atoms": 28,
+  "full_camera": [
+    0.7763391137123108,
+    -0.38586321473121643,
+    0.4984045624732971,
+    0.0033767949789762497,
+    0.7932571768760681,
+    0.6088773012161255,
+    -0.6303064227104187,
+    -0.47101232409477234,
+    0.6171395778656006,
+    0.0,
+    0.0,
+    -227.74131774902344,
+    40.917240142822266,
+    7.651390075683594,
+    10.417339324951172,
+    179.55299377441406,
+    275.9296569824219,
+    20.0
+  ],
+  "pocket_camera": [
+    0.7763391137123108,
+    -0.38586321473121643,
+    0.4984045624732971,
+    0.0033767949789762497,
+    0.7932571768760681,
+    0.6088773012161255,
+    -0.6303064227104187,
+    -0.47101232409477234,
+    0.6171395778656006,
+    0.0,
+    0.0,
+    -222.0700225830078,
+    40.917240142822266,
+    7.651390075683594,
+    10.417339324951172,
+    175.08169555664062,
+    269.058349609375,
+    20.0
+  ],
+  "backgrounds": [
+    "white",
+    "transparent"
+  ],
+  "projection": "orthographic",
+  "rendering": "CPU ray tracing; two threads; raster molecular illustration",
+  "coordinates": "Original deposited CIF; no structural editing or generated pose."
+}

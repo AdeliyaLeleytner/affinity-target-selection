@@ -1,0 +1,8 @@
+From this directory, with conda-forge mamba available:
+
+  mamba env create -f environment.yml -p ../runtime
+  ../runtime/bin/python render_reference.py
+
+The script reads the adjacent original 1M2Z.cif, verifies its SHA-256, and renders deposited receptor/ligand coordinates. It needs the genuine pymol-open-source distribution. No structural prediction, docking, coordinate repair or commercial activation is performed.
+
+Only the PNGs in this directory are deliverable images. The rejected_evaluation/ subdirectory preserves failed evaluation-build output and must not be copied to a publication repository.

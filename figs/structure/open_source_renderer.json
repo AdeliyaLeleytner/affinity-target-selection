@@ -1,0 +1,9 @@
+{
+  "name": "pymol-open-source",
+  "version": "3.1.0",
+  "build": "py311h7c5d48f_8",
+  "channel": "https://conda.anaconda.org/conda-forge/osx-arm64",
+  "url": "https://conda.anaconda.org/conda-forge/osx-arm64/pymol-open-source-3.1.0-py311h7c5d48f_8.conda",
+  "sha256": "a1d62d4ce8a2eb89fe5b87364c9f1168005e4a8d5a42506e2a02912af21bd611",
+  "license": "LicenseRef-PyMOL"
+}

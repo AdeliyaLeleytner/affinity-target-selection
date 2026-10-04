@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "file": "results/native_baseline/input_manifest.json",
+      "sha256": "7556aa19b006ffad21c714f9cd914acdb5643fa274000d9c795f1a5944297537",
+      "bytes": 1530
+    },
+    {
+      "file": "results/native_baseline/audit.json",
+      "sha256": "f908a67ef855aa0e3f50b31c22c4b5bb045ef328b9a9e472a57a3b775d8b3b5d",
+      "bytes": 2429
+    },
+    {
+      "file": "results/native_baseline/spd_assays.csv",
+      "sha256": "71099e7099253cedac1190aec5c3f6e1a014364123b886fbf3896641e7dac62a",
+      "bytes": 2928
+    },
+    {
+      "file": "results/native_baseline/davis_targets.csv",
+      "sha256": "3ec03304cac7ac27143b481f2b3cfc322a3ccf97e250f65862cd05db556f1ead",
+      "bytes": 144567
+    },
+    {
+      "file": "results/native_baseline/effective_config.json",
+      "sha256": "96045be675599482964128201c28194dd84f1769df04a5697eb5d51f1685d975",
+      "bytes": 1397
+    },
+    {
+      "file": "results/native_baseline/davis_inputs.npz",
+      "sha256": "3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4",
+      "bytes": 31175676
+    },
+    {
+      "file": "results/native_baseline/native_summary.csv",
+      "sha256": "880daccb474fe8dbb765481e9f2cd6ee2482bdc339ae941fe461f8019fb9c57d",
+      "bytes": 40368
+    },
+    {
+      "file": "results/native_baseline/spd_molecules.csv",
+      "sha256": "3257b360cdd8016f422d886175673304d570de757eab2a66b316264dc829160c",
+      "bytes": 85700
+    },
+    {
+      "file": "results/native_baseline/spd_assay_envelope_inputs.npz",
+      "sha256": "c0d55f170059d4895b1da223ac2b938d9c7bbbc0fa329859e5918c541199304d",
+      "bytes": 477440
+    },
+    {
+      "file": "results/native_baseline/davis_molecules.csv",
+      "sha256": "cd60b2989f1b2647ae5b55ecb330c15fb67dedea4d412a06619a7e1daef9ced1",
+      "bytes": 9910
+    },
+    {
+      "file": "results/native_baseline/score_table.tex",
+      "sha256": "f5c20b4c9caacab4db1fbc3895e3b48e6fc34e4131093051a85028caf48ea7cf",
+      "bytes": 613
+    },
+    {
+      "file": "results/native_baseline/spd_source_representative_inputs.npz",
+      "sha256": "4257d09aa4327fef3fa5909f38886f9c800958f5718492e5cc358c687f91b84c",
+      "bytes": 477846
+    },
+    {
+      "file": "results/native_baseline/query_contributions.csv.gz",
+      "sha256": "6429e4d408a08536b688c3b32a7e4b73c8bc9cc7d512d26309c080a6376f1a6e",
+      "bytes": 698324
+    }
+  ]
+}

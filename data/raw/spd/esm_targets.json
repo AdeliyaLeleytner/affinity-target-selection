@@ -1,0 +1,120 @@
+{
+  "dataset": "SPD",
+  "model": "facebook/esm2_t33_650M_UR50D",
+  "model_revision": "08e4846e537177426273712802403f7ba8261b6c",
+  "pooling": {
+    "kind": "Final-layer mean over amino-acid residues, excluding BOS and EOS tokens.",
+    "mean_accumulation_dtype": "float64",
+    "stored_dtype": "float32"
+  },
+  "alignment": "Gene names from the saved cache audit matched to current native-baseline target order.",
+  "targets": 10,
+  "embedding_dimension": 1280,
+  "embedding_dtype": "float32",
+  "sequence_regime": "Eight full canonical proteins and two domains from the cached scoring-input sequence regime.",
+  "target_sequences": [
+    {
+      "gene": "KCNH2",
+      "length": 259,
+      "canonical_length": 1159,
+      "is_full_canonical": false,
+      "sequence_sha1": "043cbd58968e37ade4cd28a422f9a17e6258d0e8",
+      "sequence_sha256": "67c5b094dd83f9b9b7699c5b73126435854163cde9fde3b9493df24211537197"
+    },
+    {
+      "gene": "ADRB1",
+      "length": 477,
+      "canonical_length": 477,
+      "is_full_canonical": true,
+      "sequence_sha1": "aabe05d2e91e2bac9e60954c9194190bed421529",
+      "sequence_sha256": "18fcd61221ac38d04dac6ba1884d8ecd1c47c0e94922905c5b51382d95849c3a"
+    },
+    {
+      "gene": "SLC6A3",
+      "length": 620,
+      "canonical_length": 620,
+      "is_full_canonical": true,
+      "sequence_sha1": "9902921a97a8bcdbf84a0f13d84dc0f2b541d9a6",
+      "sequence_sha256": "b94221f783eb87845713fd033590015677926a71ee9010789aeb11e63c50cbd0"
+    },
+    {
+      "gene": "CHRM1",
+      "length": 460,
+      "canonical_length": 460,
+      "is_full_canonical": true,
+      "sequence_sha1": "8782afb4285d02b937e41266773815c067db7380",
+      "sequence_sha256": "a9d70e6dd79a9d6d5fef6772b08efb426eba56ffbc49737c550220e71c521746"
+    },
+    {
+      "gene": "CHRM3",
+      "length": 590,
+      "canonical_length": 590,
+      "is_full_canonical": true,
+      "sequence_sha1": "fdaacd06cae45dee0a72a22a070e011306191ede",
+      "sequence_sha256": "f3a234965b33be052fd4748f042f809d2add6da3b3f556da4c51eca393e1fe9d"
+    },
+    {
+      "gene": "DRD2",
+      "length": 443,
+      "canonical_length": 443,
+      "is_full_canonical": true,
+      "sequence_sha1": "4b96de0a9c0e6a94de517712e395a55390292842",
+      "sequence_sha256": "8c2b6e1477ff21093d6bdee1a4482a36b1024aaebbd4e968c54262742cefd3e0"
+    },
+    {
+      "gene": "SLC6A2",
+      "length": 617,
+      "canonical_length": 617,
+      "is_full_canonical": true,
+      "sequence_sha1": "85e845d039c70985ff66244a13b9f34017221f20",
+      "sequence_sha256": "7f69aba6b465001d13b7bd7589de4d14647de313773b2cdfa0446b095330ee08"
+    },
+    {
+      "gene": "SLC6A4",
+      "length": 630,
+      "canonical_length": 630,
+      "is_full_canonical": true,
+      "sequence_sha1": "99960ad1810e976dfe2bd374fafd7423aaff638a",
+      "sequence_sha256": "08ab69187b319cff68eba5e95e6d06f77a7a8e75e4b1a83c000f7ed2c160d37f"
+    },
+    {
+      "gene": "NR3C1",
+      "length": 257,
+      "canonical_length": 777,
+      "is_full_canonical": false,
+      "sequence_sha1": "843ec3d8607d46db1ac6712fd01009d2791f89ff",
+      "sequence_sha256": "44a77a567f43c20f05ec2a6b6b28036c5e9230bb8e70774167d3baeec7ef6cd3"
+    },
+    {
+      "gene": "HRH1",
+      "length": 487,
+      "canonical_length": 487,
+      "is_full_canonical": true,
+      "sequence_sha1": "33f74ebccb47bcc94dc00dbaa9275be61a95d714",
+      "sequence_sha256": "9112bbed27c42f31d518060045f8f075e25408811ec7af9d1b9bb91c91cbd1d2"
+    }
+  ],
+  "source_mean_cache_sha256": "76775af236ff45af4a95b5a739504c6a899d3b689689f2af85a33ed7d67211c6",
+  "source_cache_audit_sha256": "b58ec4ca248e644bcc3cc9a538e75f4a1fa2187698299b10ab2f991fc6919729",
+  "source_sequence_manifest_sha256": "8140a9d23a24ac1fe572b9e1d03df215591999d75209cebcbd9f14bdbe9f1019",
+  "source_producer_script_sha256": "d2daae548cea444e17ba12d0a04d0f4a4f53ee84defa0ebfe53095b8adc96ab7",
+  "source_asset_pinner_sha256": "abf29654c130a1b7ec796609aa35dad483b5ba070650d75341e25e519e6dbd99",
+  "verification": {
+    "missing_gene_keys": 0,
+    "sequence_hashes_match_audit": true,
+    "source_mean_hash_matches_audit": true,
+    "source_sequence_manifest_hash_matches_audit": true,
+    "source_producer_script_hash_matches_audit": true,
+    "finite_values_only": true
+  },
+  "arrays": {
+    "target_names": "Genes in the current native-baseline target order.",
+    "sequence_sha1": "SHA1 of the exact sequence string.",
+    "sequence_sha256": "SHA256 of the exact sequence string.",
+    "sequences": "Exact cached scoring-input sequence strings.",
+    "sequence_lengths": "Used sequence lengths in amino acids.",
+    "canonical_lengths": "Canonical protein lengths recorded in the cache audit.",
+    "is_full_canonical": "Whether used sequence equals the recorded full canonical protein.",
+    "embeddings": "Aligned cached residue-mean ESM embeddings."
+  }
+}

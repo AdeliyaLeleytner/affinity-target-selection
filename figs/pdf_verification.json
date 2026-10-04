@@ -1,0 +1,32 @@
+[
+  {
+    "file": "score_component_mean.pdf",
+    "pages": 1,
+    "width_inches": 6.75,
+    "height_inches": 4.4,
+    "fonts": [
+      {
+        "name": "/CQXNYP+HelveticaNeue",
+        "subtype": "/Type0",
+        "descendant_subtype": [
+          "/CIDFontType2"
+        ]
+      }
+    ]
+  },
+  {
+    "file": "score_component_relative.pdf",
+    "pages": 1,
+    "width_inches": 6.75,
+    "height_inches": 4.4,
+    "fonts": [
+      {
+        "name": "/CQXNYP+HelveticaNeue",
+        "subtype": "/Type0",
+        "descendant_subtype": [
+          "/CIDFontType2"
+        ]
+      }
+    ]
+  }
+]

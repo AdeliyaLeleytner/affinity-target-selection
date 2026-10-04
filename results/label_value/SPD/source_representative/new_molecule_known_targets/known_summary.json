@@ -1,0 +1,110 @@
+{
+  "dataset": "SPD",
+  "policy": "source_representative",
+  "regime": "new_molecules_known_targets",
+  "mode": "full",
+  "config": {
+    "mode": "full",
+    "fractions": [
+      0.125,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "seed": 20261004,
+    "ridge": [
+      0.001,
+      0.03,
+      1.0
+    ],
+    "maxiter": 2000,
+    "stage": "label_value",
+    "regimes": [
+      "new_molecule_known_targets",
+      "new_targets_known_molecules"
+    ],
+    "spd_policies": [
+      "source_representative",
+      "assay_envelope"
+    ],
+    "davis_fitting_cohort": "exact_identity",
+    "numerical_threads": 2,
+    "block_workers": 3,
+    "pilot_affinity_method": "boltz_affinity",
+    "pilot_binder_method": "boltz_binary"
+  },
+  "availability_aliases": {
+    "availability__boltz_binary": "availability__boltz_affinity",
+    "availability__boltzina_vina_far_binary": "availability__boltzina_vina_far_affinity",
+    "availability__boltzina_vina_zero_affinity": "availability__boltzina_vina_far_affinity",
+    "availability__boltzina_vina_zero_binary": "availability__boltzina_vina_far_affinity",
+    "availability__nesso_binary": "availability__nesso_affinity",
+    "availability__raw_ad4": "availability__nesso_affinity",
+    "availability__vina": "availability__nesso_affinity"
+  },
+  "ridge_definition": "model alpha = listed ridge / number of known targets",
+  "pca4_definition": "PCA on training-standardized representation cells; first four PCs restandardized using training cells only",
+  "selection_metric": "macro within-molecule determinate target-pair concordance on common finite-native support",
+  "status": "complete",
+  "methods": [
+    "target_prior",
+    "chemistry",
+    "calibrated__boltz_affinity",
+    "availability__boltz_affinity",
+    "plus__boltz_affinity",
+    "calibrated__boltz_binary",
+    "availability__boltz_binary",
+    "plus__boltz_binary",
+    "calibrated__boltzina_vina_far_affinity",
+    "availability__boltzina_vina_far_affinity",
+    "plus__boltzina_vina_far_affinity",
+    "calibrated__boltzina_vina_far_binary",
+    "availability__boltzina_vina_far_binary",
+    "plus__boltzina_vina_far_binary",
+    "calibrated__boltzina_vina_zero_affinity",
+    "availability__boltzina_vina_zero_affinity",
+    "plus__boltzina_vina_zero_affinity",
+    "calibrated__boltzina_vina_zero_binary",
+    "availability__boltzina_vina_zero_binary",
+    "plus__boltzina_vina_zero_binary",
+    "calibrated__gnina",
+    "availability__gnina",
+    "plus__gnina",
+    "calibrated__nesso_affinity",
+    "availability__nesso_affinity",
+    "plus__nesso_affinity",
+    "calibrated__nesso_binary",
+    "availability__nesso_binary",
+    "plus__nesso_binary",
+    "calibrated__raw_ad4",
+    "availability__raw_ad4",
+    "plus__raw_ad4",
+    "calibrated__raw_gnina_own",
+    "availability__raw_gnina_own",
+    "plus__raw_gnina_own",
+    "calibrated__vina",
+    "availability__vina",
+    "plus__vina"
+  ],
+  "fits": 6200,
+  "selected_models": 620,
+  "unavailable": [],
+  "test_metrics_evaluated": true,
+  "oof_shape": [
+    38,
+    4,
+    930,
+    10
+  ],
+  "oof_axes": [
+    "method",
+    "fraction",
+    "molecule",
+    "target"
+  ],
+  "finite_oof_cells": 1413600,
+  "common_native_cells": 9099,
+  "elapsed_seconds": 112.635516583
+}

@@ -1,0 +1,14 @@
+{
+  "per_query_rows_replayed": 298152,
+  "variant_policy_groups": 328,
+  "aggregate_curve_rows_verified": 3280,
+  "expected_assay_rows_verified": 328,
+  "max_allowed_arithmetic_replay_difference": 1e-12,
+  "eligible_cohort_overlap": {
+    "shared": 194,
+    "source_only": 11,
+    "envelope_only": 4,
+    "same_certified_target_on_shared": 194
+  },
+  "notes": "Tolerance is numerical arithmetic verification only, not a scientific effect threshold."
+}

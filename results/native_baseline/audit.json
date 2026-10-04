@@ -1,0 +1,98 @@
+{
+  "davis": {
+    "molecules": 72,
+    "assay_constructs": 442,
+    "unique_sequences": 434,
+    "measurement_cells": 31824,
+    "censored_at_source_ceiling": 22400,
+    "mapping_categories": {
+      "exact_standard_inchikey": 47,
+      "exact_inchi_connectivity_block": 21,
+      "explicit_upstream_name_salt_or_variant_override": 4
+    },
+    "duplicate_sequence_groups": [
+      {
+        "targets": [
+          "abl1_q252h",
+          "abl1_q252h_p"
+        ],
+        "different_measurement_molecules": 42
+      },
+      {
+        "targets": [
+          "abl1_t315i",
+          "abl1_t315i_p"
+        ],
+        "different_measurement_molecules": 40
+      },
+      {
+        "targets": [
+          "abl1",
+          "abl1_p"
+        ],
+        "different_measurement_molecules": 43
+      },
+      {
+        "targets": [
+          "abl1_h396p",
+          "abl1_h396p_p"
+        ],
+        "different_measurement_molecules": 48
+      },
+      {
+        "targets": [
+          "abl1_f317i",
+          "abl1_f317i_p"
+        ],
+        "different_measurement_molecules": 36
+      },
+      {
+        "targets": [
+          "abl1_f317l",
+          "abl1_f317l_p"
+        ],
+        "different_measurement_molecules": 42
+      },
+      {
+        "targets": [
+          "kit",
+          "kit_l576p",
+          "kit_v559d"
+        ],
+        "different_measurement_molecules": 45
+      }
+    ],
+    "interpretation": "Same sequence strings do not establish identical complete producer inputs; modifications and structural input provenance require inspection."
+  },
+  "spd": {
+    "source_assay_records": 121097,
+    "scored_molecules": 930,
+    "targets": 10,
+    "matched_exact_identity_assay_records": 7463,
+    "source_representative_records": 6959,
+    "qualifiers": {
+      ">": 6155,
+      "=": 1308
+    },
+    "score_coverage": {
+      "boltz_affinity": 9290,
+      "boltz_binary": 9290,
+      "boltzina_vina_far_affinity": 9110,
+      "boltzina_vina_far_binary": 9110,
+      "boltzina_vina_zero_affinity": 9110,
+      "boltzina_vina_zero_binary": 9110,
+      "gnina": 9179,
+      "nesso_affinity": 9180,
+      "nesso_binary": 9180,
+      "raw_ad4": 9180,
+      "raw_gnina_own": 9169,
+      "vina": 9180
+    }
+  },
+  "status": "completed",
+  "elapsed_seconds": 6.851563583,
+  "new_fits": 0,
+  "new_native_inference": 0,
+  "paid_compute": 0,
+  "quantile_definition": "Empirical query distribution; not confidence intervals"
+}

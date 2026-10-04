@@ -1,0 +1,141 @@
+{
+  "dataset": "SPD",
+  "policy": "source_representative",
+  "regime": "new_molecules_known_targets",
+  "mode": "full",
+  "config": {
+    "mode": "full",
+    "fractions": [
+      0.125,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "seed": 20261004,
+    "ridge": [
+      0.001,
+      0.03,
+      1.0
+    ],
+    "maxiter": 2000,
+    "stage": "label_value",
+    "regimes": [
+      "new_molecule_known_targets"
+    ],
+    "spd_policies": [
+      "source_representative",
+      "assay_envelope"
+    ],
+    "davis_fitting_cohort": "exact_identity",
+    "numerical_threads": 2,
+    "block_workers": 2,
+    "arm_family": "score_components",
+    "run_blocks": [
+      "SPD/source_representative/new_molecule_known_targets",
+      "SPD/assay_envelope/new_molecule_known_targets"
+    ],
+    "pilot_affinity_method": "boltz_affinity",
+    "pilot_binder_method": "boltz_binary"
+  },
+  "availability_aliases": {
+    "availability__boltz_binary": "availability__boltz_affinity",
+    "availability__boltzina_vina_far_binary": "availability__boltzina_vina_far_affinity",
+    "availability__boltzina_vina_zero_affinity": "availability__boltzina_vina_far_affinity",
+    "availability__boltzina_vina_zero_binary": "availability__boltzina_vina_far_affinity",
+    "availability__nesso_binary": "availability__nesso_affinity",
+    "availability__raw_ad4": "availability__nesso_affinity",
+    "availability__vina": "availability__nesso_affinity"
+  },
+  "arm_family": "score_components",
+  "ridge_definition": "model alpha = listed ridge / number of known targets",
+  "pca4_definition": "PCA on training-standardized representation cells; first four PCs restandardized using training cells only",
+  "selection_metric": "macro within-molecule determinate target-pair concordance on common finite-native support",
+  "status": "complete",
+  "score_components": {
+    "mean": "Per-scorer mean over available target scores for each molecule; original cell mask retained.",
+    "relative": "Original score minus that molecule's profile mean; original cell mask retained.",
+    "pair_features": {
+      "plus": 2,
+      "mean": 2,
+      "mean_relative": 3,
+      "availability": 1
+    },
+    "missingness": "Exactly one original per-cell missingness indicator in each arm.",
+    "scaling": "PairScaler fitted on the current training partition, separately for each arm.",
+    "interpretation": "Predictive sufficiency of molecule-wide summaries versus conditional target-relative variation; no biological causality or absence-of-interaction-information claim.",
+    "acquisition_cost": "The mean uses all available original target-profile scores; no inference-cost saving is established."
+  },
+  "methods": [
+    "target_prior",
+    "chemistry",
+    "availability__boltz_affinity",
+    "plus__boltz_affinity",
+    "mean__boltz_affinity",
+    "mean_relative__boltz_affinity",
+    "availability__boltz_binary",
+    "plus__boltz_binary",
+    "mean__boltz_binary",
+    "mean_relative__boltz_binary",
+    "availability__boltzina_vina_far_affinity",
+    "plus__boltzina_vina_far_affinity",
+    "mean__boltzina_vina_far_affinity",
+    "mean_relative__boltzina_vina_far_affinity",
+    "availability__boltzina_vina_far_binary",
+    "plus__boltzina_vina_far_binary",
+    "mean__boltzina_vina_far_binary",
+    "mean_relative__boltzina_vina_far_binary",
+    "availability__boltzina_vina_zero_affinity",
+    "plus__boltzina_vina_zero_affinity",
+    "mean__boltzina_vina_zero_affinity",
+    "mean_relative__boltzina_vina_zero_affinity",
+    "availability__boltzina_vina_zero_binary",
+    "plus__boltzina_vina_zero_binary",
+    "mean__boltzina_vina_zero_binary",
+    "mean_relative__boltzina_vina_zero_binary",
+    "availability__gnina",
+    "plus__gnina",
+    "mean__gnina",
+    "mean_relative__gnina",
+    "availability__nesso_affinity",
+    "plus__nesso_affinity",
+    "mean__nesso_affinity",
+    "mean_relative__nesso_affinity",
+    "availability__nesso_binary",
+    "plus__nesso_binary",
+    "mean__nesso_binary",
+    "mean_relative__nesso_binary",
+    "availability__raw_ad4",
+    "plus__raw_ad4",
+    "mean__raw_ad4",
+    "mean_relative__raw_ad4",
+    "availability__raw_gnina_own",
+    "plus__raw_gnina_own",
+    "mean__raw_gnina_own",
+    "mean_relative__raw_gnina_own",
+    "availability__vina",
+    "plus__vina",
+    "mean__vina",
+    "mean_relative__vina"
+  ],
+  "fits": 8600,
+  "selected_models": 860,
+  "unavailable": [],
+  "test_metrics_evaluated": true,
+  "oof_shape": [
+    50,
+    4,
+    930,
+    10
+  ],
+  "oof_axes": [
+    "method",
+    "fraction",
+    "molecule",
+    "target"
+  ],
+  "finite_oof_cells": 1860000,
+  "common_native_cells": 9099,
+  "elapsed_seconds": 925.6725830830001
+}

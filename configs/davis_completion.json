@@ -1,0 +1,33 @@
+{
+  "stage": "label_value",
+  "mode": "full",
+  "regimes": [
+    "new_molecule_known_targets",
+    "new_targets_known_molecules"
+  ],
+  "spd_policies": [
+    "source_representative",
+    "assay_envelope"
+  ],
+  "davis_fitting_cohort": "exact_identity",
+  "fractions": [
+    0.125,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "seed": 20261004,
+  "ridge": [
+    0.001,
+    0.03,
+    1.0
+  ],
+  "maxiter": 2000,
+  "numerical_threads": 2,
+  "block_workers": 1,
+  "run_blocks": [
+    "DAVIS/exact_identity/new_molecule_known_targets"
+  ]
+}

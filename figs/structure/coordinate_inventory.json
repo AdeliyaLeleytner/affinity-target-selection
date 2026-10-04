@@ -1,0 +1,110 @@
+{
+  "source_url": "https://files.rcsb.org/download/1M2Z.cif",
+  "retrieved_utc": "2026-10-03T23:40:18.651442+00:00",
+  "original_cif_sha256": "ada431c0857e60ef8a1176a54add1ef29bab5c1bc87fda79d03157ab009e0692",
+  "bytes": 543594,
+  "coordinate_chains": [
+    {
+      "auth_chain": "A",
+      "protein_residues": 255,
+      "first_auth": 523,
+      "last_auth": 777,
+      "nonpolymers": []
+    },
+    {
+      "auth_chain": "B",
+      "protein_residues": 21,
+      "first_auth": 734,
+      "last_auth": 754,
+      "nonpolymers": []
+    },
+    {
+      "auth_chain": "D",
+      "protein_residues": 253,
+      "first_auth": 525,
+      "last_auth": 777,
+      "nonpolymers": []
+    },
+    {
+      "auth_chain": "E",
+      "protein_residues": 21,
+      "first_auth": 734,
+      "last_auth": 754,
+      "nonpolymers": []
+    },
+    {
+      "auth_chain": "A",
+      "protein_residues": 0,
+      "first_auth": null,
+      "last_auth": null,
+      "nonpolymers": [
+        {
+          "resname": "BOG",
+          "auth_residue": 501,
+          "atoms": 19,
+          "subchain": "E"
+        },
+        {
+          "resname": "BOG",
+          "auth_residue": 778,
+          "atoms": 12,
+          "subchain": "F"
+        },
+        {
+          "resname": "BOG",
+          "auth_residue": 779,
+          "atoms": 14,
+          "subchain": "G"
+        },
+        {
+          "resname": "DEX",
+          "auth_residue": 301,
+          "atoms": 29,
+          "subchain": "H"
+        }
+      ]
+    },
+    {
+      "auth_chain": "D",
+      "protein_residues": 0,
+      "first_auth": null,
+      "last_auth": null,
+      "nonpolymers": [
+        {
+          "resname": "DEX",
+          "auth_residue": 401,
+          "atoms": 28,
+          "subchain": "I"
+        }
+      ]
+    },
+    {
+      "auth_chain": "A",
+      "protein_residues": 0,
+      "first_auth": null,
+      "last_auth": null,
+      "nonpolymers": []
+    },
+    {
+      "auth_chain": "B",
+      "protein_residues": 0,
+      "first_auth": null,
+      "last_auth": null,
+      "nonpolymers": []
+    },
+    {
+      "auth_chain": "D",
+      "protein_residues": 0,
+      "first_auth": null,
+      "last_auth": null,
+      "nonpolymers": []
+    },
+    {
+      "auth_chain": "E",
+      "protein_residues": 0,
+      "first_auth": null,
+      "last_auth": null,
+      "nonpolymers": []
+    }
+  ]
+}

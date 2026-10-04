@@ -1,0 +1,141 @@
+{
+  "asset": "NR3C1_1M2Z_dexamethasone_experimental_reference",
+  "purpose": "Experimental structural illustration for an overview or graphical abstract; not a scored prediction or evidence of predictive performance.",
+  "source": {
+    "pdb_id": "1M2Z",
+    "coordinate_file": "1M2Z.cif",
+    "coordinate_url": "https://files.rcsb.org/download/1M2Z.cif",
+    "entry_url": "https://www.rcsb.org/structure/1M2Z",
+    "retrieved_utc": "2026-10-03T23:40:18.651442+00:00",
+    "sha256": "ada431c0857e60ef8a1176a54add1ef29bab5c1bc87fda79d03157ab009e0692",
+    "bytes": 543594,
+    "pdb_doi": "10.2210/pdb1M2Z/pdb",
+    "primary_citation_doi": "10.1016/S0092-8674(02)00817-6",
+    "experimental_method": "X-RAY DIFFRACTION",
+    "resolution_angstrom": 2.5,
+    "mutation_from_deposition": "F602S"
+  },
+  "receptor": {
+    "gene": "NR3C1",
+    "uniprot": "P04150",
+    "domain": "Human glucocorticoid receptor ligand-binding domain",
+    "auth_chain": "A",
+    "label_asym_id": "A",
+    "auth_residue_start": 523,
+    "auth_residue_end": 777,
+    "resolved_residues": 255,
+    "selected_heavy_atoms": 2074,
+    "display": "Muted blue cartoon",
+    "other_deposited_receptor_chain": "D",
+    "other_receptor_and_coactivator_chains_displayed": false
+  },
+  "ligand": {
+    "name": "Dexamethasone",
+    "ccd_id": "DEX",
+    "auth_chain": "A",
+    "auth_residue_id": 301,
+    "label_asym_id": "H",
+    "heavy_atoms": 28,
+    "rendered_chemical_bonds": 31,
+    "display": "Orange sticks and small spheres",
+    "coordinates": "Original deposited CIF coordinates",
+    "hydrogen_handling": "One deposited H14 atom is omitted from display; no atoms or conformers are generated."
+  },
+  "verification": {
+    "gemmi_version": "0.7.0",
+    "chain_and_ligand_selections_checked_from_cif": true,
+    "heavy_atom_counts_asserted_in_render_script": true,
+    "source_hash_matches_archived_registry": true,
+    "structure_prediction_performed": false,
+    "docking_performed": false,
+    "coordinate_repair_performed": false,
+    "interaction_or_contact_lines_added": false,
+    "ray_render_exit_code": 0,
+    "visual_qa": {
+      "full_white_view_inspected": true,
+      "pocket_view_inspected": true,
+      "uncropped_receptor_and_ligand": true,
+      "no_watermark_in_open_source_exports": true,
+      "palette": "Muted blue receptor; orange ligand; white or transparent background",
+      "interpretation": "Reference fold and experimental ligand placement only; not a predicted pose or contact analysis."
+    }
+  },
+  "rendering": {
+    "script": "render_reference.py",
+    "camera_settings": "camera_settings.json",
+    "renderer": "Genuine open-source PyMOL 3.1.0; conda-forge osx-arm64 package py311h7c5d48f_8",
+    "projection": "Orthographic",
+    "ray_threads": 2,
+    "outputs": [
+      "nr3c1_dexamethasone_full.png",
+      "nr3c1_dexamethasone_full_transparent.png",
+      "nr3c1_dexamethasone_pocket.png"
+    ],
+    "note": "The pocket overview retains the complete selected ligand-binding-domain chain.",
+    "package_provenance": "open_source_renderer.json",
+    "license_url": "https://github.com/schrodinger/pymol-open-source/blob/master/LICENSE",
+    "environment": "environment.yml",
+    "publication_export_status": "Regenerated with genuine open-source renderer; commercial evaluation exports rejected and preserved separately.",
+    "render_script_sha256": "53f48cd71603c787c1438aee430194b426fad903ec7e86c5d519cc01f484d762"
+  },
+  "caption": "Dexamethasone bound to the glucocorticoid receptor ligand-binding domain. Experimental structure 1M2Z, author chain A, with DEX residue 301; receptor cartoon in blue and ligand sticks in orange. This is an experimental reference illustration.",
+  "outputs": [
+    {
+      "file": "nr3c1_dexamethasone_full.png",
+      "width": 1800,
+      "height": 1800,
+      "mode": "RGBA",
+      "content_bbox_pixels": [
+        282,
+        441,
+        1695,
+        1385
+      ],
+      "content_clear_of_canvas_edges": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "0e211f8016bde2a6ed4b28cb590a9e958dc8a6a4529017b69d81657a44fd108b",
+      "bytes": 493051
+    },
+    {
+      "file": "nr3c1_dexamethasone_full_transparent.png",
+      "width": 1800,
+      "height": 1800,
+      "mode": "RGBA",
+      "content_bbox_pixels": [
+        282,
+        441,
+        1695,
+        1385
+      ],
+      "content_clear_of_canvas_edges": true,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "sha256": "18e3704a7e8c03453fffe4871a758b752e5110b23bf75a3dd8e3c5550262c339",
+      "bytes": 537370
+    },
+    {
+      "file": "nr3c1_dexamethasone_pocket.png",
+      "width": 1800,
+      "height": 1600,
+      "mode": "RGBA",
+      "content_bbox_pixels": [
+        337,
+        382,
+        1624,
+        1242
+      ],
+      "content_clear_of_canvas_edges": true,
+      "alpha_range": [
+        255,
+        255
+      ],
+      "sha256": "313b194f14e0ec6e81218fe9a4af3d2ea78f00f8b59f5249da14e4dd689d4a90",
+      "bytes": 433751
+    }
+  ]
+}

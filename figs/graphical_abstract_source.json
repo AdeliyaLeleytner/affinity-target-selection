@@ -1,0 +1,122 @@
+{
+  "figure_size_inches": [
+    6.75,
+    3.55
+  ],
+  "native": [
+    {
+      "dataset": "SPD",
+      "policy": "source_representative",
+      "stratum": "all_determinate",
+      "molecules": 373,
+      "difference_pp": 9.675883569319575,
+      "bootstrap_low_pp": 6.856111453462868,
+      "bootstrap_high_pp": 12.550938150608046
+    },
+    {
+      "dataset": "SPD",
+      "policy": "source_representative",
+      "stratum": "both_exact",
+      "molecules": 261,
+      "difference_pp": 3.664486499735542,
+      "bootstrap_low_pp": -0.5528901246931675,
+      "bootstrap_high_pp": 7.931326580360867
+    },
+    {
+      "dataset": "DAVIS",
+      "policy": "all_source_molecules",
+      "stratum": "all_determinate",
+      "molecules": 72,
+      "difference_pp": 6.5988187859402565,
+      "bootstrap_low_pp": 4.872566517947656,
+      "bootstrap_high_pp": 8.423575397356908
+    },
+    {
+      "dataset": "DAVIS",
+      "policy": "all_source_molecules",
+      "stratum": "both_exact",
+      "molecules": 72,
+      "difference_pp": 0.09390467113637585,
+      "bootstrap_low_pp": -1.791524717720919,
+      "bootstrap_high_pp": 1.5849643621161729
+    }
+  ],
+  "native_uncertainty": {
+    "draws": 5000,
+    "seed": 20261004,
+    "unit": "molecule",
+    "interval": [
+      2.5,
+      97.5
+    ],
+    "scope": "Conditional on fixed target panels and cached predictions; excludes training and inference variation."
+  },
+  "learning": {
+    "chemistry": {
+      "budget_percent": [
+        12.5,
+        25.0,
+        50.0,
+        100.0
+      ],
+      "concordance_percent": [
+        63.51065021307706,
+        65.81115196897699,
+        69.16130195058065,
+        71.12178424751265
+      ],
+      "evaluable_molecules": [
+        373,
+        373,
+        373,
+        373
+      ]
+    },
+    "plus__nesso_affinity": {
+      "budget_percent": [
+        12.5,
+        25.0,
+        50.0,
+        100.0
+      ],
+      "concordance_percent": [
+        66.60907897169858,
+        69.73837375910841,
+        71.63046685919814,
+        72.17196986584288
+      ],
+      "evaluable_molecules": [
+        373,
+        373,
+        373,
+        373
+      ]
+    }
+  },
+  "learning_scope": "SPD source-representative policy; new molecules/known targets; 5-fold OOF, one fixed seeded scaffold-group partition. Curves are descriptive, not confidence bands.",
+  "structure_scope": "Experimental 1M2Z, NR3C1 chain A\u2013DEX 301. Context illustration only, not a prediction or evidence of score mechanism.",
+  "structure_crop_pixels": [
+    247,
+    406,
+    1730,
+    1420
+  ],
+  "inputs": {
+    "native": {
+      "relative_path": "figs/native_head_comparison_source.json",
+      "sha256": "942ced475c288d58709cb6be3d5469fc17d789c7190c232665031674f742a9ca"
+    },
+    "learning": {
+      "relative_path": "results/label_value/SPD/source_representative/new_molecule_known_targets/known_aggregate_metrics.csv",
+      "sha256": "62e6f5451c42295b69518ec64eb097aaa0c02be9a4b1c7b38964d1e4564b9543"
+    },
+    "structure": {
+      "relative_path": "figs/structure/nr3c1_dexamethasone_full_transparent.png",
+      "sha256": "18e3704a7e8c03453fffe4871a758b752e5110b23bf75a3dd8e3c5550262c339"
+    },
+    "structure_provenance": {
+      "relative_path": "figs/structure/provenance.json",
+      "sha256": "22fb0bf2a516d0da0e16b71dbcfabb178a4dbae0f3ee325dc251161cea1a28f8"
+    }
+  }
+}

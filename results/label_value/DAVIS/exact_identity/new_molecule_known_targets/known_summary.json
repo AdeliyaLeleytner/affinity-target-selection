@@ -1,0 +1,81 @@
+{
+  "dataset": "DAVIS",
+  "policy": "exact_identity",
+  "regime": "new_molecules_known_targets",
+  "mode": "full",
+  "config": {
+    "mode": "full",
+    "fractions": [
+      0.125,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "seed": 20261004,
+    "ridge": [
+      0.001,
+      0.03,
+      1.0
+    ],
+    "maxiter": 2000,
+    "stage": "label_value",
+    "regimes": [
+      "new_molecule_known_targets",
+      "new_targets_known_molecules"
+    ],
+    "spd_policies": [
+      "source_representative",
+      "assay_envelope"
+    ],
+    "davis_fitting_cohort": "exact_identity",
+    "numerical_threads": 2,
+    "block_workers": 1,
+    "run_blocks": [
+      "DAVIS/exact_identity/new_molecule_known_targets"
+    ],
+    "pilot_affinity_method": "boltz_affinity",
+    "pilot_binder_method": "boltz_binder"
+  },
+  "availability_aliases": {
+    "availability__boltz_binder": "availability__boltz_affinity"
+  },
+  "ridge_definition": "model alpha = listed ridge / number of known targets",
+  "pca4_definition": "PCA on training-standardized representation cells; first four PCs restandardized using training cells only",
+  "selection_metric": "macro within-molecule determinate target-pair concordance on common finite-native support",
+  "status": "complete",
+  "methods": [
+    "target_prior",
+    "chemistry",
+    "calibrated__boltz_affinity",
+    "availability__boltz_affinity",
+    "plus__boltz_affinity",
+    "calibrated__boltz_binder",
+    "availability__boltz_binder",
+    "plus__boltz_binder",
+    "representation_readout",
+    "representation_plus_chemistry",
+    "representation_pca4_readout",
+    "scalar_members_readout"
+  ],
+  "fits": 2200,
+  "selected_models": 220,
+  "unavailable": [],
+  "test_metrics_evaluated": true,
+  "oof_shape": [
+    12,
+    4,
+    47,
+    442
+  ],
+  "oof_axes": [
+    "method",
+    "fraction",
+    "molecule",
+    "target"
+  ],
+  "finite_oof_cells": 997152,
+  "common_native_cells": 20774,
+  "elapsed_seconds": 7203.9134833749995
+}

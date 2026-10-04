@@ -1,0 +1,17 @@
+fraction,method,common_queries,target_pair_identities,exact_comparisons_retained,one_bounded_comparisons_retained,exact_gain_fixed_target_pair_mix,one_bounded_gain_fixed_target_pair_mix,stratum_gain_difference_fixed_target_pair_mix,uncertainty
+0.125,plus__boltz_affinity,46,17619,91082,255048,0.03445234636679552,0.033080141629673064,-0.0013722047371224552,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.125,plus__boltz_binder,46,17619,91082,255048,0.03905336484235708,0.07897644671501756,0.039923081872660485,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.125,representation_readout,46,17619,91082,255048,0.053803415046070245,0.0847889567251104,0.030985541679040156,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.125,representation_plus_chemistry,46,17619,91082,255048,0.053824834322181214,0.08484529298729039,0.031020458665109177,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.25,plus__boltz_affinity,46,17619,91082,255048,0.029258432146297194,0.03905257160255264,0.009794139456255447,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.25,plus__boltz_binder,46,17619,91082,255048,0.03606002367309698,0.06911574115082819,0.033055717477731214,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.25,representation_readout,46,17619,91082,255048,0.041707839236411144,0.06722998168569591,0.025522142449284767,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.25,representation_plus_chemistry,46,17619,91082,255048,0.04194108149436063,0.07261160288783196,0.03067052139347133,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.5,plus__boltz_affinity,46,17619,91082,255048,0.013164171519960938,0.023748999418243395,0.010584827898282457,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.5,plus__boltz_binder,46,17619,91082,255048,0.009446471284940023,0.03664146814180853,0.027194996856868506,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.5,representation_readout,46,17619,91082,255048,0.008772948440724609,0.030509596778474465,0.021736648337749857,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+0.5,representation_plus_chemistry,46,17619,91082,255048,0.027106168572964846,0.044504402674221705,0.01739823410125686,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+1.0,plus__boltz_affinity,46,17619,91082,255048,0.01426055368540162,0.01903795289218599,0.004777399206784369,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+1.0,plus__boltz_binder,46,17619,91082,255048,0.012453304481199544,0.03197615943055938,0.019522854949359833,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+1.0,representation_readout,46,17619,91082,255048,-0.007072341117106569,0.015755930200297072,0.022828271317403642,Descriptive reweighting only; no interval computed for this secondary diagnostic.
+1.0,representation_plus_chemistry,46,17619,91082,255048,0.024638517271181104,0.03626012526565423,0.011621607994473128,Descriptive reweighting only; no interval computed for this secondary diagnostic.

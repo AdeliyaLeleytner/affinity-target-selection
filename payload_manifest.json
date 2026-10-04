@@ -1,0 +1,567 @@
+{
+  "format": 1,
+  "part_size_limit_bytes": 6000000,
+  "files": [
+    {
+      "path": "data/raw/davis/affinity_out.npz",
+      "bytes": 31213561,
+      "sha256": "fa366a026b6a75e9abf3f865ec4253fcea7bc736cbf72d0e68ec936c71f2830b",
+      "parts": [
+        {
+          "path": "payloads/fa366a026b6a75e9abf3f865ec4253fcea7bc736cbf72d0e68ec936c71f2830b.000.bin",
+          "bytes": 6000000,
+          "sha256": "d9c70a93f548d4d336d2666085c4e13f17a99cd1fe36dc549d1ab79e7d166e52"
+        },
+        {
+          "path": "payloads/fa366a026b6a75e9abf3f865ec4253fcea7bc736cbf72d0e68ec936c71f2830b.001.bin",
+          "bytes": 6000000,
+          "sha256": "c439d8ade53eb7594a85bf480d24753701f6761769f84a3bc180057141b6eada"
+        },
+        {
+          "path": "payloads/fa366a026b6a75e9abf3f865ec4253fcea7bc736cbf72d0e68ec936c71f2830b.002.bin",
+          "bytes": 6000000,
+          "sha256": "5c44f3490eaa390b0fb5c12978fe4c51041b039c6f76e42327d2ad74aac22a7a"
+        },
+        {
+          "path": "payloads/fa366a026b6a75e9abf3f865ec4253fcea7bc736cbf72d0e68ec936c71f2830b.003.bin",
+          "bytes": 6000000,
+          "sha256": "ec8af270a25696367f3ec1032c76e58ba5cdd6e72b06fc00583ce37c5e7a0497"
+        },
+        {
+          "path": "payloads/fa366a026b6a75e9abf3f865ec4253fcea7bc736cbf72d0e68ec936c71f2830b.004.bin",
+          "bytes": 6000000,
+          "sha256": "4a52b323596782eafd8ed433efdbb88f099de2109fd4ac19cd198a6232c20e51"
+        },
+        {
+          "path": "payloads/fa366a026b6a75e9abf3f865ec4253fcea7bc736cbf72d0e68ec936c71f2830b.005.bin",
+          "bytes": 1213561,
+          "sha256": "3a227770901468a678f57fca060fa9a86eeff391357ffa5f5b4000c7dc4b0c72"
+        }
+      ]
+    },
+    {
+      "path": "data/raw/davis/measurements.tsv",
+      "bytes": 13477288,
+      "sha256": "711f5e45e26b7098d50f5201532835c19ab376ae2d9e46db3f9034dceee952d5",
+      "parts": [
+        {
+          "path": "payloads/711f5e45e26b7098d50f5201532835c19ab376ae2d9e46db3f9034dceee952d5.000.bin",
+          "bytes": 6000000,
+          "sha256": "99dbb27d570865f1c78eef442cf7c041509a1a931c875a4f9355bd0c4808cf89"
+        },
+        {
+          "path": "payloads/711f5e45e26b7098d50f5201532835c19ab376ae2d9e46db3f9034dceee952d5.001.bin",
+          "bytes": 6000000,
+          "sha256": "2a55e4b3110d93636aff251d7a5b6f5e953d4a1a6737f61bcd42cae5e6263555"
+        },
+        {
+          "path": "payloads/711f5e45e26b7098d50f5201532835c19ab376ae2d9e46db3f9034dceee952d5.002.bin",
+          "bytes": 1477288,
+          "sha256": "835aadfa7d889c552c2430d447055775a0743cf27db20e9a9fbd45a206ce06c4"
+        }
+      ]
+    },
+    {
+      "path": "results/label_value/DAVIS/exact_identity/new_molecule_known_targets/known_oof.npz",
+      "bytes": 6820423,
+      "sha256": "c069b5476a3550f67c6e3181b593254ee5759d1af2a5c1ab407510331cc8c50f",
+      "parts": [
+        {
+          "path": "payloads/c069b5476a3550f67c6e3181b593254ee5759d1af2a5c1ab407510331cc8c50f.000.bin",
+          "bytes": 6000000,
+          "sha256": "d7eff0f88b54a0d273aef48ab4afd3e32a12ead4e15fa70c7d0cda0046cc08e8"
+        },
+        {
+          "path": "payloads/c069b5476a3550f67c6e3181b593254ee5759d1af2a5c1ab407510331cc8c50f.001.bin",
+          "bytes": 820423,
+          "sha256": "9f8d894bfa2e9e45ef02ef0377dac588ae04eb04809012c6ba1f434448329065"
+        }
+      ]
+    },
+    {
+      "path": "results/label_value/DAVIS/exact_identity/new_targets_known_molecules/cold_oof.npz",
+      "bytes": 6201299,
+      "sha256": "7b4d062403e6b79ff161b857a2f56a26bb582c800d9a34a130c5b0ddca27cea2",
+      "parts": [
+        {
+          "path": "payloads/7b4d062403e6b79ff161b857a2f56a26bb582c800d9a34a130c5b0ddca27cea2.000.bin",
+          "bytes": 6000000,
+          "sha256": "6f8e0a7dce60ac316b56065116b9cab0e42db34ad636be16a9d18cc01b470d7c"
+        },
+        {
+          "path": "payloads/7b4d062403e6b79ff161b857a2f56a26bb582c800d9a34a130c5b0ddca27cea2.001.bin",
+          "bytes": 201299,
+          "sha256": "1b693549a2a4f54bad573dfeb4ad951f6913bdaa1780e07cdbc30e71c0466a68"
+        }
+      ]
+    },
+    {
+      "path": "results/label_value/SPD/assay_envelope/new_molecule_known_targets/known_oof.npz",
+      "bytes": 10452808,
+      "sha256": "8953d845663b2503e96d30f607567ae7aa2b62129b8728c250aba1d6e84528af",
+      "parts": [
+        {
+          "path": "payloads/8953d845663b2503e96d30f607567ae7aa2b62129b8728c250aba1d6e84528af.000.bin",
+          "bytes": 6000000,
+          "sha256": "389264d596d3da80d0dc58220a3a51c23e4fb7552abc00c0131d729c4b7063a3"
+        },
+        {
+          "path": "payloads/8953d845663b2503e96d30f607567ae7aa2b62129b8728c250aba1d6e84528af.001.bin",
+          "bytes": 4452808,
+          "sha256": "06f4234524c9f89b0526b9c5adc0a0f2abc23f987337ce47c789ab57abc8cd15"
+        }
+      ]
+    },
+    {
+      "path": "results/label_value/SPD/assay_envelope/new_molecule_known_targets/known_query_metrics.csv.gz",
+      "bytes": 10226688,
+      "sha256": "ddd161bce069b0d83edfd6617d0a7aa87ce22e658f0129cc8a1cd2daa844f64f",
+      "parts": [
+        {
+          "path": "payloads/ddd161bce069b0d83edfd6617d0a7aa87ce22e658f0129cc8a1cd2daa844f64f.000.bin",
+          "bytes": 6000000,
+          "sha256": "782536d35e810fe283b72edeedcd1f0ee95c19d7eba6c4db303cbcdccf6d0650"
+        },
+        {
+          "path": "payloads/ddd161bce069b0d83edfd6617d0a7aa87ce22e658f0129cc8a1cd2daa844f64f.001.bin",
+          "bytes": 4226688,
+          "sha256": "2a50477427c7dbbe0321572fc6851d1517550d9c4c67fc614b19a2cd0c23e03d"
+        }
+      ]
+    },
+    {
+      "path": "results/label_value/SPD/source_representative/new_molecule_known_targets/known_oof.npz",
+      "bytes": 10454627,
+      "sha256": "6253b6723c5d72118f020e5d52c1f703a0373fa142f3675f5aa7b1545e0d9089",
+      "parts": [
+        {
+          "path": "payloads/6253b6723c5d72118f020e5d52c1f703a0373fa142f3675f5aa7b1545e0d9089.000.bin",
+          "bytes": 6000000,
+          "sha256": "e6fc055b6f328cc141b7664df8a1fa9a08e421ae32f2563aece7f0f03b842062"
+        },
+        {
+          "path": "payloads/6253b6723c5d72118f020e5d52c1f703a0373fa142f3675f5aa7b1545e0d9089.001.bin",
+          "bytes": 4454627,
+          "sha256": "a733fcf0414891cc893f49f8b0742b583a499ebc5c76d3fc8a9dcafbca662a22"
+        }
+      ]
+    },
+    {
+      "path": "results/label_value/SPD/source_representative/new_molecule_known_targets/known_query_metrics.csv.gz",
+      "bytes": 10166647,
+      "sha256": "24555ab5ba2ae3385b59781ac392b68a77022399ccc3e26354b19da3e7f9a424",
+      "parts": [
+        {
+          "path": "payloads/24555ab5ba2ae3385b59781ac392b68a77022399ccc3e26354b19da3e7f9a424.000.bin",
+          "bytes": 6000000,
+          "sha256": "cee04ff68fe234e1062902d16e11453fd12d00ea639e210869fb1118db6c3739"
+        },
+        {
+          "path": "payloads/24555ab5ba2ae3385b59781ac392b68a77022399ccc3e26354b19da3e7f9a424.001.bin",
+          "bytes": 4166647,
+          "sha256": "3337b33d4ad9ae3d78cb50f87b428adcc9cf3e0337b31e6f4bf4daaa629865c5"
+        }
+      ]
+    },
+    {
+      "path": "results/label_value/prepared/davis_inputs.npz",
+      "bytes": 31175676,
+      "sha256": "3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4",
+      "parts": [
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.000.bin",
+          "bytes": 6000000,
+          "sha256": "c8b360a0b5807959e486edab89634c43845a8bfe4badba00ccd89c64062c804c"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.001.bin",
+          "bytes": 6000000,
+          "sha256": "87dae0a5a3212dba7729f70403edb54261b58de007fb999b6ba72e5517e082ff"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.002.bin",
+          "bytes": 6000000,
+          "sha256": "5db66d79f8e61ded9d2e2962b7c743606e4a39ff7de6ae2563335d7c429aa9ed"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.003.bin",
+          "bytes": 6000000,
+          "sha256": "682d8725d324623c871f4ee3a03a7e437ed572e8b33db3aaa97a9e73879a172c"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.004.bin",
+          "bytes": 6000000,
+          "sha256": "5cfd9036a2e65983dd44d2a891628c55a1fa527b8092da5afabcfc17ec81348b"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.005.bin",
+          "bytes": 1175676,
+          "sha256": "04b366bbbe472434ca233fee8fefd044bdc8856a9f0c78fea00694817cf0cd4e"
+        }
+      ]
+    },
+    {
+      "path": "results/native_baseline/davis_inputs.npz",
+      "bytes": 31175676,
+      "sha256": "3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4",
+      "parts": [
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.000.bin",
+          "bytes": 6000000,
+          "sha256": "c8b360a0b5807959e486edab89634c43845a8bfe4badba00ccd89c64062c804c"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.001.bin",
+          "bytes": 6000000,
+          "sha256": "87dae0a5a3212dba7729f70403edb54261b58de007fb999b6ba72e5517e082ff"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.002.bin",
+          "bytes": 6000000,
+          "sha256": "5db66d79f8e61ded9d2e2962b7c743606e4a39ff7de6ae2563335d7c429aa9ed"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.003.bin",
+          "bytes": 6000000,
+          "sha256": "682d8725d324623c871f4ee3a03a7e437ed572e8b33db3aaa97a9e73879a172c"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.004.bin",
+          "bytes": 6000000,
+          "sha256": "5cfd9036a2e65983dd44d2a891628c55a1fa527b8092da5afabcfc17ec81348b"
+        },
+        {
+          "path": "payloads/3c3fabdb81de9d75235f0973ab8994250aba0aec475b5d8bfa974c97c0078ff4.005.bin",
+          "bytes": 1175676,
+          "sha256": "04b366bbbe472434ca233fee8fefd044bdc8856a9f0c78fea00694817cf0cd4e"
+        }
+      ]
+    },
+    {
+      "path": "results/score_components/SPD/assay_envelope/new_molecule_known_targets/known_oof.npz",
+      "bytes": 13902090,
+      "sha256": "5e30bf227b3435edf879ad9c07f53b61e770f5ab070fa5882a00b8f3cae385d5",
+      "parts": [
+        {
+          "path": "payloads/5e30bf227b3435edf879ad9c07f53b61e770f5ab070fa5882a00b8f3cae385d5.000.bin",
+          "bytes": 6000000,
+          "sha256": "059ef0491c54e050b876d5ccbc6df6ce93968c9e8cd27f0232b85d24f933005c"
+        },
+        {
+          "path": "payloads/5e30bf227b3435edf879ad9c07f53b61e770f5ab070fa5882a00b8f3cae385d5.001.bin",
+          "bytes": 6000000,
+          "sha256": "df99c307e2658f113e437f2244bcd3b193ea38ab2826871b7bf1fd8cff25e0d4"
+        },
+        {
+          "path": "payloads/5e30bf227b3435edf879ad9c07f53b61e770f5ab070fa5882a00b8f3cae385d5.002.bin",
+          "bytes": 1902090,
+          "sha256": "8a2d47218f64bbe44e97f6fad379bb8f130a765e3d3adae896cbc178e127913a"
+        }
+      ]
+    },
+    {
+      "path": "results/score_components/SPD/assay_envelope/new_molecule_known_targets/known_query_metrics.csv.gz",
+      "bytes": 12792939,
+      "sha256": "959cf14a25820f32e0214c0db53c379710deb7c6bdf3beeb7b4c7bf4bc07dbac",
+      "parts": [
+        {
+          "path": "payloads/959cf14a25820f32e0214c0db53c379710deb7c6bdf3beeb7b4c7bf4bc07dbac.000.bin",
+          "bytes": 6000000,
+          "sha256": "b28612501cc772a634ba916d15180c45e64397ecf4ed0598c18c3a0462367938"
+        },
+        {
+          "path": "payloads/959cf14a25820f32e0214c0db53c379710deb7c6bdf3beeb7b4c7bf4bc07dbac.001.bin",
+          "bytes": 6000000,
+          "sha256": "1c2a96b2d6c989222b9588e76586e09c2fd4bace19a2cd86af849812d55b9c75"
+        },
+        {
+          "path": "payloads/959cf14a25820f32e0214c0db53c379710deb7c6bdf3beeb7b4c7bf4bc07dbac.002.bin",
+          "bytes": 792939,
+          "sha256": "015c077d807dfd16429465c39a3d47c1c60b6c02544fbe99aa2426c577ac485f"
+        }
+      ]
+    },
+    {
+      "path": "results/score_components/SPD/source_representative/new_molecule_known_targets/known_oof.npz",
+      "bytes": 13901701,
+      "sha256": "937956273c2b583d7eb8b1e0c8f86dacd9cae0a016a8d425901412f030758309",
+      "parts": [
+        {
+          "path": "payloads/937956273c2b583d7eb8b1e0c8f86dacd9cae0a016a8d425901412f030758309.000.bin",
+          "bytes": 6000000,
+          "sha256": "159ce92ce9cf609aed35720f335e1973d1b662c0cffaa16f05943f7c1108c9cf"
+        },
+        {
+          "path": "payloads/937956273c2b583d7eb8b1e0c8f86dacd9cae0a016a8d425901412f030758309.001.bin",
+          "bytes": 6000000,
+          "sha256": "298939fafe8886cdf336c117cc3efd1caa2668729dfdff1e35ea10e12797a37f"
+        },
+        {
+          "path": "payloads/937956273c2b583d7eb8b1e0c8f86dacd9cae0a016a8d425901412f030758309.002.bin",
+          "bytes": 1901701,
+          "sha256": "2ed31569a51d1b52866391a279b8b87e8f6e3d332c51018e815d805ee64d220b"
+        }
+      ]
+    },
+    {
+      "path": "results/score_components/SPD/source_representative/new_molecule_known_targets/known_query_metrics.csv.gz",
+      "bytes": 12726635,
+      "sha256": "a4f740677a4f35d197e5e96cf93566633b2b99924892a1e883c5626d357af827",
+      "parts": [
+        {
+          "path": "payloads/a4f740677a4f35d197e5e96cf93566633b2b99924892a1e883c5626d357af827.000.bin",
+          "bytes": 6000000,
+          "sha256": "b83dd0ebf2ca039fb21087161d92d3ada07c7fdd947dc529bf39482d43507c5b"
+        },
+        {
+          "path": "payloads/a4f740677a4f35d197e5e96cf93566633b2b99924892a1e883c5626d357af827.001.bin",
+          "bytes": 6000000,
+          "sha256": "f9309b445d37b11384265d0298cacb396d02f73df31c007dd110c48419edfc4a"
+        },
+        {
+          "path": "payloads/a4f740677a4f35d197e5e96cf93566633b2b99924892a1e883c5626d357af827.002.bin",
+          "bytes": 726635,
+          "sha256": "617e297a78aa737250e87b7dd07c30fe1648c721ae16533e07a829ad21c6aa9c"
+        }
+      ]
+    },
+    {
+      "path": "results/target_pairs/SPD/assay_envelope/new_targets_known_molecules/cold_oof.npz",
+      "bytes": 26930967,
+      "sha256": "968fb3b72b6361222aff692349b098edf0ec0712e9e53abe332f95b7cf4c03f2",
+      "parts": [
+        {
+          "path": "payloads/968fb3b72b6361222aff692349b098edf0ec0712e9e53abe332f95b7cf4c03f2.000.bin",
+          "bytes": 6000000,
+          "sha256": "5b5fea18ab76f81ff71918471bcf136784a7d22db98baa6b50b46af0f42d512a"
+        },
+        {
+          "path": "payloads/968fb3b72b6361222aff692349b098edf0ec0712e9e53abe332f95b7cf4c03f2.001.bin",
+          "bytes": 6000000,
+          "sha256": "074435fcd9741dfcb4bd983f3dde1395e713ac5662cc13776133717a8a43fc75"
+        },
+        {
+          "path": "payloads/968fb3b72b6361222aff692349b098edf0ec0712e9e53abe332f95b7cf4c03f2.002.bin",
+          "bytes": 6000000,
+          "sha256": "f9679ed566306e053dbfbc12c675cad98012a40ea61982de569248442356b9d4"
+        },
+        {
+          "path": "payloads/968fb3b72b6361222aff692349b098edf0ec0712e9e53abe332f95b7cf4c03f2.003.bin",
+          "bytes": 6000000,
+          "sha256": "7945451ab117ea1eb4d85716eb243f9bd99fc7f1819b784662652acad69c123b"
+        },
+        {
+          "path": "payloads/968fb3b72b6361222aff692349b098edf0ec0712e9e53abe332f95b7cf4c03f2.004.bin",
+          "bytes": 2930967,
+          "sha256": "5c9e9f3423b0608a127f49ed2a5c82429bfa160ff8fb5447c58f4a7731829945"
+        }
+      ]
+    },
+    {
+      "path": "results/target_pairs/SPD/assay_envelope/new_targets_known_molecules/cold_query_metrics.csv.gz",
+      "bytes": 93704626,
+      "sha256": "cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3",
+      "parts": [
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.000.bin",
+          "bytes": 6000000,
+          "sha256": "e6177b8e49b36567119bb1893d2b957d1390e0743b7826a29ebd0b045c3c0661"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.001.bin",
+          "bytes": 6000000,
+          "sha256": "543ca55dadfc588ae66bee812d5b0f9af03c6c7b375a02624a0648121f92edb5"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.002.bin",
+          "bytes": 6000000,
+          "sha256": "3dc685300949f69458bb1a85127d03658a09f9d9ddca70aebbbc0869ec611d81"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.003.bin",
+          "bytes": 6000000,
+          "sha256": "a79bdaa76ac4769cc782426199d8766efb6c04f49fb5a6b8b59da2de77d04d87"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.004.bin",
+          "bytes": 6000000,
+          "sha256": "50edd9a6df415c2bc9a39ac5d51635d58af6d7927c9a961cdf684e1c5c04152d"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.005.bin",
+          "bytes": 6000000,
+          "sha256": "46936017beb8ab973400875f07516818f4f5fb625fc4e41b4839275e2c9c99ed"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.006.bin",
+          "bytes": 6000000,
+          "sha256": "95f9c2351e477111961166340f99cad67625d40603fcbb68678c3a79f645d58c"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.007.bin",
+          "bytes": 6000000,
+          "sha256": "444192ab987a9937237ee6470078e0fca6a4568b22fab8485087321d38c944ba"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.008.bin",
+          "bytes": 6000000,
+          "sha256": "3c4ec504453f39d891010cf0ce9acba0aa81d4588fb17c8d822a0d88cbdd3e14"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.009.bin",
+          "bytes": 6000000,
+          "sha256": "e67f86a6f6e75ec2bb24850eab6110b0ce97b5672d5b33f89da058ae1452d9ce"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.010.bin",
+          "bytes": 6000000,
+          "sha256": "f1e48b178fb58c9be1ea145546db0222d123b8bdd9694617f7883794c6281cc9"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.011.bin",
+          "bytes": 6000000,
+          "sha256": "362bf4cacfd8cd8799ee6faaf7ea21896dcce76fd49b3e1a8668e897667ec54e"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.012.bin",
+          "bytes": 6000000,
+          "sha256": "22c166e3d273fbd3c3a047e9d0c81eeb75429db0798b7dc0ec466357095d133e"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.013.bin",
+          "bytes": 6000000,
+          "sha256": "50c331cbae615b11c07503d6cab1094c145f677c1f866f99f7488cf04f1f8efb"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.014.bin",
+          "bytes": 6000000,
+          "sha256": "18498a20aaa45415b28fa380a7cd7e43e12d481a2961b90d99826d3dc84dc369"
+        },
+        {
+          "path": "payloads/cd6c116e36959824a1e50d24621061457d271e9e7d1440215219a03c9f8038d3.015.bin",
+          "bytes": 3704626,
+          "sha256": "17bd8c455d93fb3b78687466bbd8f7e7020882e13718e89fb65ffca4450e5bc1"
+        }
+      ]
+    },
+    {
+      "path": "results/target_pairs/SPD/source_representative/new_targets_known_molecules/cold_oof.npz",
+      "bytes": 26939991,
+      "sha256": "9e133aba27a4f26e88ae476c91be7217d6087aa46fc3f2b89690bedefd7dbf7c",
+      "parts": [
+        {
+          "path": "payloads/9e133aba27a4f26e88ae476c91be7217d6087aa46fc3f2b89690bedefd7dbf7c.000.bin",
+          "bytes": 6000000,
+          "sha256": "6639413f2e802eac87b5fe478e696a4fc1b5c8f73c0e28ddbd0c78ebb87c88ed"
+        },
+        {
+          "path": "payloads/9e133aba27a4f26e88ae476c91be7217d6087aa46fc3f2b89690bedefd7dbf7c.001.bin",
+          "bytes": 6000000,
+          "sha256": "acc66fd3e78b87dab70676b6640e0eb98b732556664e27b05642dad83f96c148"
+        },
+        {
+          "path": "payloads/9e133aba27a4f26e88ae476c91be7217d6087aa46fc3f2b89690bedefd7dbf7c.002.bin",
+          "bytes": 6000000,
+          "sha256": "0886422eba3f57f4f6bfdbc34188f51927814b01ae7ac3f277d05accf0f93c81"
+        },
+        {
+          "path": "payloads/9e133aba27a4f26e88ae476c91be7217d6087aa46fc3f2b89690bedefd7dbf7c.003.bin",
+          "bytes": 6000000,
+          "sha256": "bed7791dfbf2a3d567c3eebea90e7c05b147333057c552e61606fbd87840d974"
+        },
+        {
+          "path": "payloads/9e133aba27a4f26e88ae476c91be7217d6087aa46fc3f2b89690bedefd7dbf7c.004.bin",
+          "bytes": 2939991,
+          "sha256": "9ba5402e77bf53254f411c61259533f8372c025b53c0690a2746586212595507"
+        }
+      ]
+    },
+    {
+      "path": "results/target_pairs/SPD/source_representative/new_targets_known_molecules/cold_query_metrics.csv.gz",
+      "bytes": 93716369,
+      "sha256": "03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab",
+      "parts": [
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.000.bin",
+          "bytes": 6000000,
+          "sha256": "2122484eda52e40c9ed532f2d9707f1be2a2be06d920ef8df72854d35cd3d021"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.001.bin",
+          "bytes": 6000000,
+          "sha256": "0835965e927b2dbb0401bc3075e9cb440d9ae4123605a9ea55d018ddc6ce210b"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.002.bin",
+          "bytes": 6000000,
+          "sha256": "aaf16e08e44db8aec8261d4b6a7972db49f8ec063239e8e765eaa807e5714e24"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.003.bin",
+          "bytes": 6000000,
+          "sha256": "8f754fdf2f4faa2c502eece7cf69ae9d88085efdd64c9fba68260a2975115413"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.004.bin",
+          "bytes": 6000000,
+          "sha256": "be245b961e1116a38790d8c51e982ed07a6400f620339124af25660eb9348b8e"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.005.bin",
+          "bytes": 6000000,
+          "sha256": "ef345162b2bde7d154586f231fcb91c335a69a240a5c9a4f535f8744b443690d"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.006.bin",
+          "bytes": 6000000,
+          "sha256": "def66c57e168bfeb8cc399a30238509a1fa2fd1e125aed5b42a81a0cb9357b71"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.007.bin",
+          "bytes": 6000000,
+          "sha256": "e5d51c0a2ebba3a7fac8b0aa511ff35d58f03a39dd2a52f5418c63d435bba9d2"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.008.bin",
+          "bytes": 6000000,
+          "sha256": "feb9c71d348d629d0209b0731e1d19aa58d0b26722c2807900e694808f5826c3"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.009.bin",
+          "bytes": 6000000,
+          "sha256": "98550a189bafb2a8b3f27c97d290d1540ebb19b8b05cfedaf90c0cf5f54b684b"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.010.bin",
+          "bytes": 6000000,
+          "sha256": "3d7ac256d857946b2a2f9931653492a68a32b708b6c218c41b1ece64677a9085"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.011.bin",
+          "bytes": 6000000,
+          "sha256": "478f516de5f2bec0e6bf99bdb92c5524f5e82583d42ed0cc515a964e46516648"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.012.bin",
+          "bytes": 6000000,
+          "sha256": "3adc2886c0357ad99b664aad05aaf5f032529f61c545e1284b5e687d6aa0f5c1"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.013.bin",
+          "bytes": 6000000,
+          "sha256": "8810ff37166fc650b5c8de45d580064bcb6bfab2cac940e1ecfa3cebbb006a3f"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.014.bin",
+          "bytes": 6000000,
+          "sha256": "b37ab21c713d56c15c3b87fb524df198c07777b940ef793e0a179b58e6ada822"
+        },
+        {
+          "path": "payloads/03f56b3cf080ccec7148407abcfa00e066f7a7c4533cc8ef6bc136d0741c0bab.015.bin",
+          "bytes": 3716369,
+          "sha256": "d0538663a8ff88fee92d82538b174add317882e9919dde5c3d8b57a73bcf200e"
+        }
+      ]
+    }
+  ]
+}

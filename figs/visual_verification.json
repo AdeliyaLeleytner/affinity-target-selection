@@ -1,0 +1,8 @@
+{
+  "plot_style_exact_copy": true,
+  "plot_style_sha256": "9372d4ebbc32c9fdbb364adf76fdcf2b0708a4c50490fc639f06c9af360a61d9",
+  "actual_pdf_renders_inspected": true,
+  "captions_inspected": true,
+  "minimum_font_pt": 8.0,
+  "no_model_fits_or_bootstrap_repeats": true
+}
